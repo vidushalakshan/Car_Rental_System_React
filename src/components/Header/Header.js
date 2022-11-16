@@ -6,7 +6,7 @@ function Header (){
     return (
     <nav className="NavbarItems">
         <h1 className="logo">Car Rental  <i className="fa-solid fa-car"></i><i className=""></i></h1>
-        <ul>
+        <ul className="nav-menu">
         {MenuData.map((item,index)=>{
             return (  
                 <li key={index}><a href={item.url} className={item.cName}>
