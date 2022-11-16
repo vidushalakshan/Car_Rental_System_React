@@ -1,10 +1,11 @@
 import React from "react"
 import { MenuData } from "./MenuData";
+import "../../styles/NavBar.css"
 
 function Header (){
     return (
     <nav className="NavbarItems">
-        <h1>Car Rental<i className=""></i></h1>
+        <h1 className="logo">Car Rental  <i className="fa-solid fa-car"></i><i className=""></i></h1>
         <ul>
         {MenuData.map((item,index)=>{
             return (  
