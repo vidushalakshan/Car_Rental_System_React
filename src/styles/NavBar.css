@@ -24,12 +24,13 @@
 
 .nav-menu {
     display: grid;
-    grid-template-columns:repeat(6 , auto);
+    grid-template-columns:repeat(60 , auto);
     grid-gap: 10px;
     list-style: none;
     align-items: center;
     text-align: center;
     justify-content: end;
+
 }
 
 .nav-links {
@@ -45,6 +46,12 @@
 
 .nav-links:hover {
     background-color: rgb(80, 80, 238);
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+}
+
+.fa-bars {
+    color: #fff;
 }
 
 
