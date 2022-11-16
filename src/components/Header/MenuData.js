@@ -9,24 +9,24 @@ export const MenuData =[
     title :"About",
     url : "#",
     cName : "nav-links",
-    icon : "fa-solid fa-house-user"
+    icon : "fa-solid fa-circle-info"
 },
 {
     title :"Cars",
     url : "#",
     cName : "nav-links",
-    icon : "fa-solid fa-house-user"
+    icon : "fa-solid fa-car"
 },
 {
     title :"Users",
     url : "#",
     cName : "nav-links",
-    icon : "fa-solid fa-house-user"
+    icon : "fa-solid fa-user"
 },
 {
     title :"Contact",
     url : "#",
     cName : "nav-links",
-    icon : "fa-solid fa-house-user"
+    icon : "fa-solid fa-address-book"
 },
 ]
