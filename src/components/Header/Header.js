@@ -1,18 +1,18 @@
 import React from "react"
+import { MenuData } from "./MenuData";
 
 function Header (){
     return (
     <nav className="NavbarItems">
         <h1>Car Rental<i className=""></i></h1>
-        <nav>
-            <ul>
-            <li><a href="home">Home</a></li>
-            <li><a href="home">About</a></li>
-            <li><a href="home">Cars</a></li>
-            <li><a href="home">Users</a></li>
-            <li><a href="home">Contact</a></li>
-            </ul>
-        </nav>
+        <ul>
+        {MenuData.map((item,index)=>{
+            return (  
+                <li key={index}><a href={item.url} className={item.cName}>
+                 <i className={item.icon}></i>{item.title}</a></li>
+            )
+        })}
+        </ul>
     </nav>
     )
 }
