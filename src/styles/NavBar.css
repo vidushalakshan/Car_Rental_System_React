@@ -28,7 +28,7 @@
 
 .nav-menu {
     display: grid;
-    grid-template-columns:repeat(60 , auto);
+    grid-template-columns:repeat(5 , auto);
     grid-gap: 10px;
     list-style: none;
     align-items: center;
@@ -56,6 +56,11 @@
 
 .fa-bars {
     color: #fff;
+}
+
+.searchBar{
+    position: relative;
+    padding-right:10px ;
 }
 
 
