@@ -6,3 +6,17 @@
     font-size: 38px;
     font-weight: bold;
 }
+
+.welcome_service{
+    position: relative;
+    top: 88px;
+    left: 10%;
+    font-size: 31px;
+    color: #FF8B13;
+}
+
+.about_desc{
+    position: relative;
+    top: 88px;
+    left: 10%;
+}
