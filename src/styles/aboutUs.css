@@ -1,8 +1,8 @@
 .topic {
     position: relative;
-    bottom: -82px;
+    bottom: -16px;
     text-align: center;
-    color: #1b0789;
+    color: #f7920e;
     font-size: 38px;
     font-weight: bold;
 }
@@ -12,7 +12,7 @@
     top: 58px;
     left: 9%;
     font-size: 31px;
-    color: #FF8B13;
+    color: #1b0789;
     display: inline-block;
 }
 
