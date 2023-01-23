@@ -10,3 +10,14 @@
     text-align: center;
     text-shadow: 2px 2px #7057ff;
 }
+
+.car_item {
+    border: 1px solid #7c8a9736;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.car_img {
+    height: 296px;
+    width: 100%;
+}
