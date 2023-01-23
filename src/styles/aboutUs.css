@@ -25,7 +25,7 @@
 }
 
 .desc {
-    font-size: 18px;
+    font-size: 17px;
 }
 
 .line {
@@ -33,7 +33,10 @@
 }
 
 .about_image {
-    height: 320px;
-    border-radius: 28%;
-    width: 128%;
+    height: 420px;
+    border-radius: 100%;
+    /* width: 128%; */
+    position: relative;
+    top: -168px;
+    right: 20px;
 }

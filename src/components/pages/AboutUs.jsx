@@ -47,9 +47,9 @@ const AboutUs  = () => {
                                 
                             </item>
                         </Grid>
-                        <Grid item xs={4}>
+                        <Grid item xs={2}>
                             <item className="desc"> 
-                                <img className="about_image" src="https://images.pexels.com/photos/100650/pexels-photo-100650.jpeg?cs=srgb&dl=pexels-mike-b-100650.jpg&fm=jpg"></img>
+                                <img className="about_image" src="https://4kwallpapers.com/images/wallpapers/honda-civic-type-r-2022-white-cars-white-background-5k-5120x2880-8430.jpeg"></img>
                             </item>
                         </Grid>
                     </Grid>
