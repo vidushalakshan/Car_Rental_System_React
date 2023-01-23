@@ -10,7 +10,7 @@
 .welcome_service{
     position: relative;
     top: 58px;
-    left: 10%;
+    left: 9%;
     font-size: 31px;
     color: #FF8B13;
     display: inline-block;
@@ -19,11 +19,21 @@
 .about_desc{
     position: relative;
     top: 60px;
-    left: 10%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: darkgrey;
+    display: inline-block;
 }
 
 .desc {
-    font-size: 25px;
+    font-size: 18px;
+}
+
+.line {
+    display: inline-block;
+}
+
+.about_image {
+    height: 320px;
+    border-radius: 28%;
+    width: 128%;
 }
