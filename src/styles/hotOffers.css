@@ -21,3 +21,9 @@
     height: 296px;
     width: 100%;
 }
+
+.section_title {
+    color: #000d6b;
+    font-size: 22px;
+    text-align: center;
+}

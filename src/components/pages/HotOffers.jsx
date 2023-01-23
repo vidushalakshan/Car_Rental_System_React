@@ -28,6 +28,10 @@ const HotOffers  = () => {
                                 <div >
                                     <img className="car_img" src="https://s1.1zoom.me/big0/660/Shelby_Super_Cars_White_background_White_559662_1280x853.jpg"></img>
                                 </div>
+
+                                <div>
+                                    <h4 className="section_title">Toyota Aventador</h4>
+                                </div>
                             </div>
                         </Item>
                     </Grid>
