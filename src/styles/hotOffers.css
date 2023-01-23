@@ -1,0 +1,12 @@
+.smTitle {
+    font-size: 28px;
+    color: chocolate;
+    text-align: center;
+}
+
+.bigTitle {
+    color: darkblue;
+    font-size: 38px;
+    text-align: center;
+    text-shadow: 2px 2px #7057ff;
+}
