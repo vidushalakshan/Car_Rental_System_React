@@ -24,6 +24,20 @@
 
 .section_title {
     color: #000d6b;
-    font-size: 22px;
+    font-size: 27px;
     text-align: center;
+}
+
+.priceDate {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #000d6b;
+    position: relative;
+    bottom: 35px;
+}
+
+.model {
+    position: relative;
+    bottom: 61px;
+    font-size: 15px;
 }
