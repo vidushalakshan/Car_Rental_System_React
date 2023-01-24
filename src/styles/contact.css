@@ -1,9 +1,14 @@
 .contact_details {
     position: absolute;
-    right: 146px;
+    right: 220px;
     top: 2694px;
 }
 
+.contact_head {
+    position: relative;
+    left: 225px;
+    bottom: 28px;
+}
 
 .footer {
     background: #000d6b;
