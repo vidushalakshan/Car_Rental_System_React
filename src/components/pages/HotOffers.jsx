@@ -29,7 +29,7 @@ const HotOffers  = () => {
                         <Item>
                             <div className="car_item">
                                 <div >
-                                    <img className="car_img" src="https://s1.1zoom.me/big0/660/Shelby_Super_Cars_White_background_White_559662_1280x853.jpg"></img>
+                                    <img className="car_img" src="https://www.zastavki.com/pictures/originals/2020Auto___Toyota_2020_black_Toyota_Crown_RS_Limited_car_on_a_white_background_142988_.jpg"></img>
                                 </div>
 
                                 <div>
@@ -59,7 +59,7 @@ const HotOffers  = () => {
                         <Item>
                             <div className="car_item">
                                 <div >
-                                    <img className="car_img" src="https://s1.1zoom.me/big0/660/Shelby_Super_Cars_White_background_White_559662_1280x853.jpg"></img>
+                                    <img className="car_img" src="https://pixelz.cc/wp-content/uploads/2019/03/bmw-m5-hamann-mission-wqhd-1440p-wallpaper.jpg"></img>
                                 </div>
 
                                 <div>
@@ -89,7 +89,7 @@ const HotOffers  = () => {
                         <Item>
                             <div className="car_item">
                                 <div >
-                                    <img className="car_img" src="https://s1.1zoom.me/big0/660/Shelby_Super_Cars_White_background_White_559662_1280x853.jpg"></img>
+                                    <img className="car_img" src="https://momentcar.com/images/toyota-crown-14.jpg"></img>
                                 </div>
                                 <div>
                                     <h4 className="section_title">Toyota Aventador</h4>

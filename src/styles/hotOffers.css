@@ -1,5 +1,5 @@
 .smTitle {
-    font-size: 28px;
+    font-size: 19px;
     color: chocolate;
     text-align: center;
     position: relative;
@@ -8,9 +8,9 @@
 
 .bigTitle {
     color: darkblue;
-    font-size: 38px;
+    font-size: 36px;
     text-align: center;
-    text-shadow: 2px 2px #7057ff;
+    /* text-shadow: 2px 2px #7057ff; */
     position: relative;
     bottom: 74px;
 }
