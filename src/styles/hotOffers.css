@@ -2,6 +2,8 @@
     font-size: 28px;
     color: chocolate;
     text-align: center;
+    position: relative;
+    bottom: 69px;
 }
 
 .bigTitle {
@@ -9,6 +11,8 @@
     font-size: 38px;
     text-align: center;
     text-shadow: 2px 2px #7057ff;
+    position: relative;
+    bottom: 74px;
 }
 
 .car_item {
@@ -40,4 +44,14 @@
     position: relative;
     bottom: 61px;
     font-size: 15px;
+}
+
+.stack {
+    position: relative;
+    left: 8px;
+    bottom: 27px;
+}
+
+.btn1 {
+    width: 208px;
 }

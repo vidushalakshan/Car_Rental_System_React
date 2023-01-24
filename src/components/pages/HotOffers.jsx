@@ -5,6 +5,8 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import { Link } from "react-router-dom";
+import Stack from '@mui/material/Stack';
+import Button from '@mui/material/Button';
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -40,7 +42,16 @@ const HotOffers  = () => {
                                      A/C, Power Steering/CD Player,Manual
                                     </span>
                                 </div>
-                               
+                                <Stack direction="row">
+                                    <div className="stack">
+                                    <Button variant="contained" className="btn1">
+                                        Rent
+                                    </Button>
+                                    <Button variant="contained" color="success" className="btn1">
+                                        Details
+                                    </Button>
+                                    </div>
+                                </Stack>
                             </div>
                         </Item>
                     </Grid>
@@ -50,6 +61,27 @@ const HotOffers  = () => {
                                 <div >
                                     <img className="car_img" src="https://s1.1zoom.me/big0/660/Shelby_Super_Cars_White_background_White_559662_1280x853.jpg"></img>
                                 </div>
+
+                                <div>
+                                    <h4 className="section_title">Toyota Aventador</h4>
+                                    <h6 className="priceDate">$40.00<span>/ Day</span></h6>
+                                </div>
+
+                                <div>
+                                     <span className="model">
+                                     A/C, Power Steering/CD Player,Manual
+                                    </span>
+                                </div>
+                                <Stack direction="row">
+                                    <div className="stack">
+                                    <Button variant="contained" className="btn1">
+                                        Rent
+                                    </Button>
+                                    <Button variant="contained" color="success" className="btn1">
+                                        Details
+                                    </Button>
+                                    </div>
+                                </Stack>
                             </div>
                         </Item>
                     </Grid>
@@ -59,6 +91,26 @@ const HotOffers  = () => {
                                 <div >
                                     <img className="car_img" src="https://s1.1zoom.me/big0/660/Shelby_Super_Cars_White_background_White_559662_1280x853.jpg"></img>
                                 </div>
+                                <div>
+                                    <h4 className="section_title">Toyota Aventador</h4>
+                                    <h6 className="priceDate">$40.00<span>/ Day</span></h6>
+                                </div>
+
+                                <div>
+                                     <span className="model">
+                                     A/C, Power Steering/CD Player,Manual
+                                    </span>
+                                </div>
+                                <Stack direction="row">
+                                    <div className="stack">
+                                    <Button variant="contained" className="btn1">
+                                        Rent
+                                    </Button>
+                                    <Button variant="contained" color="success" className="btn1">
+                                        Details
+                                    </Button>
+                                    </div>
+                                </Stack>
                             </div>
                         </Item>
                     </Grid>
