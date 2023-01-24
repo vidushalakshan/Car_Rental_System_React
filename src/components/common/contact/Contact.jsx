@@ -53,8 +53,14 @@ const Contact  = () => {
           <Col lg="3" md="4" sm="12">
             <div className="mb-4 contact_details">
               <h5 className="footer__link-title">Newsletter</h5>
-              <p className="section__description">Subscribe our newsletter</p>
+              <p className="office__info">Subscribe our newsletter</p>
               <div className="newsletter">
+                <input type="email" placeholder="Name" />
+                <span>
+                  <i class="ri-send-plane-line"></i>
+                </span>
+              </div>
+              <div className="newsletter email">
                 <input type="email" placeholder="Email" />
                 <span>
                   <i class="ri-send-plane-line"></i>

@@ -6,8 +6,13 @@
 
 .contact_head {
     position: relative;
-    left: 225px;
+    padding-left: 225px;
     bottom: 28px;
+}
+
+.email {
+    position: relative;
+    top: 18px;
 }
 
 .footer {
@@ -65,6 +70,8 @@
     border: 1px solid #7c8a972f;
     border-radius: 50px;
     background: #020a4de9;
+    position: relative;
+    top: 6px;
   }
   
   .newsletter input {
@@ -80,6 +87,8 @@
   
   .footer__bottom {
     border-top: 1px solid #7c8a972f;
+    color: white;
+    text-align: center;
   }
   
   @media only screen and (max-width: 768px) {
