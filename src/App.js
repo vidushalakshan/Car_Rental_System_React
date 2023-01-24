@@ -6,6 +6,7 @@ import "../src/styles/normalize.css"
 import "../src/styles/background.css"
 import AboutUs from "./components/pages/AboutUs";
 import HotOffers from "./components/pages/HotOffers";
+import Contact from "./components/common/contact/Contact";
 
 
 
@@ -16,6 +17,7 @@ function App() {
       <Home/>
       <AboutUs/>
       <HotOffers/>
+      <Contact/>
     </div>
   );
 }
