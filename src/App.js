@@ -1,14 +1,11 @@
 import React from "react";
 import Header from "./components/Header/Header";
 import Home from "./components/pages/Home";
-
-import "../src/styles/normalize.css"
-import "../src/styles/background.css"
+import "../src/styles/normalize.css";
+import "../src/styles/background.css";
 import AboutUs from "./components/pages/AboutUs";
 import HotOffers from "./components/pages/HotOffers";
 import Contact from "./components/common/contact/Contact";
-
-
 
 function App() {
   return (
