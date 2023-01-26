@@ -50,7 +50,7 @@
 }
 
 .nav-links:hover {
-    background-color: rgb(80, 80, 238);
+    background-color: rgb(226, 89, 15);
     border-radius: 4px;
     transition: all 0.2s ease-in-out;
 }
