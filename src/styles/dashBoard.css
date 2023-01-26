@@ -1,7 +1,6 @@
 .dash_btn {
     list-style: none;
     text-decoration-line: none;
-    background-color: #434242;
 }
 
 .page_link {
@@ -11,15 +10,49 @@
 
 .dash_page {
     padding: 10px;
-    background-color: #434242;
+    box-shadow: rgb(0 0 0 / 5%) 0rem 1.25rem 1.6875rem 0rem;
+    margin-bottom: inherit;
+    background-color: #222020;
+    border-radius: 39px;
 }
 
 .page {
     position: relative;
-    padding-bottom: 43px;
+    padding-bottom: 25px;
     right: 21px;
 }
 
-.icon1 {
-    icon : "fa-solid fa-house-user"
+.page_icon {
+    position: absolute;
+
 }
+
+.dashboard {
+    position: relative;
+}
+
+.admin {
+    position: relative;
+}
+
+.driver{
+    position: relative;
+}
+
+.customer {
+    position: relative;
+}
+
+.car {
+    position: relative;
+}
+
+.booking {
+    position: relative;
+}
+
+.payment {
+    position: relative;
+}
+
+

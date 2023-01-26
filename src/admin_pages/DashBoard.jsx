@@ -26,7 +26,7 @@ const DashBoard = () => {
         
         <Box sx={{ flexGrow: 1 }}>
                 <Grid container spacing={3}>
-                    <Grid item xs={3}>
+                    <Grid item xs={2.5}>
                         <Item>
                             <div className="dash_page">
                                 <h2>Admin Dashboard</h2>
@@ -34,25 +34,25 @@ const DashBoard = () => {
                                 <div className="page_link">
                                     <ul className="dash_btn">
                                         <li className="page">
-                                            <Button className="icon1"><DashboardIcon></DashboardIcon> Dashboard</Button>
+                                            <Button className="dashboard"><DashboardIcon className="page_icon"></DashboardIcon>Dashboard</Button>
                                         </li>
                                         <li className="page">
-                                            <Button><AdminPanelSettingsIcon></AdminPanelSettingsIcon>Admin</Button>
+                                            <Button className="admin"><AdminPanelSettingsIcon className="page_icon"></AdminPanelSettingsIcon>Admin</Button>
                                         </li>
                                         <li className="page">
-                                            <Button><AirlineSeatReclineExtraIcon></AirlineSeatReclineExtraIcon>Drivers</Button>
+                                            <Button className="driver"><AirlineSeatReclineExtraIcon className="page_icon"></AirlineSeatReclineExtraIcon>Drivers</Button>
                                         </li>
                                         <li className="page">
-                                            <Button><AccountCircleIcon></AccountCircleIcon>Customers</Button>
+                                            <Button className="customer"><AccountCircleIcon className="page_icon"></AccountCircleIcon>Customers</Button>
                                         </li>
                                         <li className="page">
-                                            <Button><CarRentalIcon></CarRentalIcon>Cars</Button>
+                                            <Button className="car"><CarRentalIcon className="page_icon"></CarRentalIcon>Cars</Button>
                                         </li>
                                         <li className="page">
-                                            <Button><LibraryBooksIcon></LibraryBooksIcon>Booking</Button>
+                                            <Button className="booking"><LibraryBooksIcon className="page_icon"></LibraryBooksIcon>Booking</Button>
                                         </li>
                                         <li className="page">
-                                            <Button><PaymentsIcon></PaymentsIcon>Payment</Button>
+                                            <Button className="payment"><PaymentsIcon className="page_icon"></PaymentsIcon>Payment</Button>
                                         </li>
                                     </ul>
                                 </div>
