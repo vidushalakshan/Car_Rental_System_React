@@ -12,6 +12,7 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import CarRentalIcon from '@mui/icons-material/CarRental';
 import LibraryBooksIcon from '@mui/icons-material/LibraryBooks';
 import PaymentsIcon from '@mui/icons-material/Payments';
+import FlutterDashRoundedIcon from '@mui/icons-material/FlutterDashRounded';
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -29,6 +30,7 @@ const DashBoard = () => {
                     <Grid item xs={2.5}>
                         <Item>
                             <div className="dash_page">
+                                <FlutterDashRoundedIcon className="dashIcon"></FlutterDashRoundedIcon>
                                 <h2 className="admin_dashboard">Admin Dashboard</h2>
                                 <hr></hr>
                                 <div className="page_link">

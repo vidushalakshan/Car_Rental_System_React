@@ -12,8 +12,13 @@
     cursor: pointer;
 }
 
+.dashIcon {
+    color: aliceblue;
+}
+
 .admin_dashboard {
     color: aliceblue;
+    font-size: 18px;
 }
 
 .page_link {
@@ -27,7 +32,8 @@
     margin-bottom: inherit;
     border: none;
     background: linear-gradient(195deg, rgb(66, 66, 74), rgb(25, 25, 25));
-    border-radius: 39px;
+    border-radius: 0.75rem;
+    border: none;
 }
 
 .page {
