@@ -34,25 +34,25 @@ const DashBoard = () => {
                                 <div className="page_link">
                                     <ul className="dash_btn">
                                         <li className="page">
-                                            <Button className="dashboard"><DashboardIcon className="icon_dash"></DashboardIcon>Dashboard</Button>
+                                            <h3 className="dashboard"><DashboardIcon className="icon_dash page_icon"></DashboardIcon>Dashboard</h3>
                                         </li>
                                         <li className="page">
-                                            <Button className="admin"><AdminPanelSettingsIcon className="admin_dash"></AdminPanelSettingsIcon>Admin</Button>
+                                            <h3  className="admin"><AdminPanelSettingsIcon className="admin_dash page_icon"></AdminPanelSettingsIcon>Admin</h3>
                                         </li>
                                         <li className="page">
-                                            <Button className="driver"><AirlineSeatReclineExtraIcon className="driver_dash"></AirlineSeatReclineExtraIcon>Drivers</Button>
+                                            <h3 className="driver"><AirlineSeatReclineExtraIcon className="driver_dash page_icon"></AirlineSeatReclineExtraIcon>Drivers</h3>
                                         </li>
                                         <li className="page">
-                                            <Button className="customer"><AccountCircleIcon className="customer_dash"></AccountCircleIcon>Customers</Button>
+                                            <h3 className="customer"><AccountCircleIcon className="customer_dash page_icon"></AccountCircleIcon>Customers</h3>
                                         </li>
                                         <li className="page">
-                                            <Button className="car"><CarRentalIcon className="car_dash"></CarRentalIcon>Cars</Button>
+                                            <h3 className="car"><CarRentalIcon className="car_dash page_icon"></CarRentalIcon>Cars</h3>
                                         </li>
                                         <li className="page">
-                                            <Button className="booking"><LibraryBooksIcon className="booking_dash"></LibraryBooksIcon>Booking</Button>
+                                            <h3 className="booking"><LibraryBooksIcon className="booking_dash page_icon"></LibraryBooksIcon>Booking</h3>
                                         </li>
                                         <li className="page">
-                                            <Button className="payment"><PaymentsIcon className="payment_dash"></PaymentsIcon>Payment</Button>
+                                            <h3 className="payment"><PaymentsIcon className="payment_dash page_icon"></PaymentsIcon>Payment</h3>
                                         </li>
                                     </ul>
                                 </div>
