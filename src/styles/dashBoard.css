@@ -12,7 +12,7 @@
     padding: 10px;
     box-shadow: rgb(0 0 0 / 5%) 0rem 1.25rem 1.6875rem 0rem;
     margin-bottom: inherit;
-    background-color: #222020;
+    background-color:  rgb(51, 49, 45);
     border-radius: 39px;
 }
 
@@ -20,39 +20,72 @@
     position: relative;
     padding-bottom: 25px;
     right: 21px;
-}
-
-.page_icon {
-    position: absolute;
-
+    color: white;
 }
 
 .dashboard {
-    position: relative;
+    position: absolute;
 }
 
 .admin {
-    position: relative;
+    position: absolute;
+    
 }
 
 .driver{
-    position: relative;
+    position: absolute;
+    
 }
 
 .customer {
-    position: relative;
+    position: absolute;
 }
 
 .car {
-    position: relative;
+    position: absolute;
 }
 
 .booking {
-    position: relative;
+    position: absolute;
 }
 
 .payment {
+    position: absolute;
+}
+
+.icon_dash {
     position: relative;
+    right: 10px;
+}
+
+.admin_dash {
+    position: relative;
+    right: 31px;
+}
+
+.driver_dash {
+    position: relative;
+    right: 22px;
+}
+
+.customer_dash {
+    position: relative;
+    right: 7px;
+}
+
+.car_dash {
+    position: relative;
+    right: 33px;
+}
+
+.booking_dash {
+    position: relative;
+    right: 18px;
+}
+
+.payment_dash {
+    position: relative;
+    right: 16px;
 }
 
 
