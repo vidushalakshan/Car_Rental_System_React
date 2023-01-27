@@ -29,7 +29,7 @@ const DashBoard = () => {
                     <Grid item xs={2.5}>
                         <Item>
                             <div className="dash_page">
-                                <h2>Admin Dashboard</h2>
+                                <h2 className="admin_dashboard">Admin Dashboard</h2>
                                 <hr></hr>
                                 <div className="page_link">
                                     <ul className="dash_btn">
