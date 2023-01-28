@@ -309,7 +309,7 @@ const DashBoard = () => {
                     <div className="admin_card card_driver">
                         <h3>Drivers</h3>
                     </div>
-                    <div className="admin_card">
+                    <div className="admin_card card_cars">
                         <h3>Cars</h3>
                     </div>
                     <div className="admin_card">
