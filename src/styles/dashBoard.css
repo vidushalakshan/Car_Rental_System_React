@@ -132,6 +132,13 @@
     width: 30%;
     height: 164px;
      margin-top: 80px;
+     overflow-wrap: break-word;
+     background-color: rgb(255, 255, 255);
+     background-clip: border-box;
+     border: 0px solid rgba(0, 0, 0, 0.125);
+     border-radius: 0.75rem;
+     box-shadow: rgb(0 0 0 / 10%) 0rem 0.25rem 0.375rem -0.0625rem, rgb(0 0 0 / 6%) 0rem 0.125rem 0.25rem -0.0625rem;
+     overflow: visible;
 }
 
 .grid {
@@ -162,6 +169,9 @@
     top: 253px;
 }
 
+.card_admin {
+
+}
 
 
 

@@ -303,7 +303,7 @@ const DashBoard = () => {
             </Box>
             <Grid item xs={12} className="grid">
                 <Item className="card">
-                    <div className="admin_card">
+                    <div className="admin_card card_admin">
                         <h3>Admin</h3>
                     </div>
                     <div className="admin_card card_driver">
