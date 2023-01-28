@@ -170,14 +170,13 @@
 }
 
 .title_box {
-    border: 1px solid rgb(255, 255, 255);
     width: 5%;
     position: absolute;
-    left: 25%;
+    left: 23%;
 }
 
 .admin_logo {
-    border: 1px solid #d0d0d0;
+   
     width: 7%;
     height: 13%;
     position: absolute;
@@ -213,6 +212,20 @@
     position: absolute;
     top: 44%;
     left: 26px;
+    color: aliceblue;
+}
+
+.card_admin {
+    background: linear-gradient(180deg, #BB67FF 0%, #C484F3 100%);
+}
+
+.title_box > h3 {
+    color: azure;
+    font-size: 17px;
+}
+
+.title_box > span {
+    color: whitesmoke;
 }
 
 
