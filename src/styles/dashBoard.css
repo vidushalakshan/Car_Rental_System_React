@@ -203,6 +203,16 @@
 .hr {
     position: relative;
     top: 58%;
+    height: 0.0625rem;
+    opacity: 0.25;
+    background-image: linear-gradient(to right, rgba(52, 71, 103, 0), rgba(52, 71, 103, 0.4), rgba(52, 71, 103, 0)) !important;
+    background-color: transparent;
+}
+
+.text_dash {
+    position: absolute;
+    top: 44%;
+    left: 26px;
 }
 
 
