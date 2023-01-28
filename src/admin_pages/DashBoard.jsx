@@ -301,6 +301,9 @@ const DashBoard = () => {
               </AppBar>
               {renderMobileMenu}
               {renderMenu}
+              <div>
+                <h1>Vihanga</h1>
+              </div>
             </Box>
           </Item>
         </Grid>
