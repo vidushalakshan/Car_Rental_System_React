@@ -130,7 +130,8 @@
 .admin_card {
     border: 1px solid red;
     width: 30%;
-    height: 100px;
+    height: 164px;
+     margin-top: 80px;
 }
 
 .grid {
@@ -149,6 +150,18 @@
     top: 8px;
     left: 785px;
 }
+
+.card_customer {
+    position: absolute;
+    left: 394px;
+}
+
+.card_payment {
+    position: absolute;
+    left: 785px;
+    top: 253px;
+}
+
 
 
 

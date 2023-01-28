@@ -312,13 +312,13 @@ const DashBoard = () => {
                     <div className="admin_card card_cars">
                         <h3>Cars</h3>
                     </div>
-                    <div className="admin_card">
+                    <div className="admin_card card_customer">
                         <h3>Customers</h3>
                     </div>
-                    <div className="admin_card">
+                    <div className="admin_card card_booking">
                         <h3>Booking</h3>
                     </div>
-                    <div className="admin_card">
+                    <div className="admin_card card_payment">
                         <h3>Payment</h3>
                     </div>
                 </Item>
