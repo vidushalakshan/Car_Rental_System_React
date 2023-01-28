@@ -169,8 +169,36 @@
     top: 253px;
 }
 
-.card_admin {
+.title_box {
+    border: 1px solid rgb(255, 255, 255);
+    width: 5%;
+    position: absolute;
+    left: 25%;
+}
 
+.admin_logo {
+    border: 1px solid #d0d0d0;
+    width: 7%;
+    height: 13%;
+    position: absolute;
+    top: 11%;
+    left: 2%;
+    background-color: black;
+}
+
+.admin_icon {
+    color: aliceblue;
+    width: 44%;
+    height: 48%;
+    align-items: center;
+    position: absolute;
+    top: 23%;
+    right: 27%;
+}
+
+.hr {
+    position: relative;
+    top: 58%;
 }
 
 

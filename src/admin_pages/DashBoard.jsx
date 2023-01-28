@@ -302,26 +302,33 @@ const DashBoard = () => {
               {renderMenu}
             </Box>
             <Grid item xs={12} className="grid">
-                <Item className="card">
-                    <div className="admin_card card_admin">
-                        <h3>Admin</h3>
-                    </div>
-                    <div className="admin_card card_driver">
-                        <h3>Drivers</h3>
-                    </div>
-                    <div className="admin_card card_cars">
-                        <h3>Cars</h3>
-                    </div>
-                    <div className="admin_card card_customer">
-                        <h3>Customers</h3>
-                    </div>
-                    <div className="admin_card card_booking">
-                        <h3>Booking</h3>
-                    </div>
-                    <div className="admin_card card_payment">
-                        <h3>Payment</h3>
-                    </div>
-                </Item>
+              <Item className="card">
+                <div className="admin_card card_admin">
+                  <div className="admin_logo">
+                    <AdminPanelSettingsIcon className="admin_icon"></AdminPanelSettingsIcon>
+                  </div>
+                  <hr className="hr"></hr>
+                  <div className="title_box">
+                    <h3>Admin</h3>
+                    <span>23</span>
+                  </div>
+                </div>
+                <div className="admin_card card_driver">
+                  <h3>Drivers</h3>
+                </div>
+                <div className="admin_card card_cars">
+                  <h3>Cars</h3>
+                </div>
+                <div className="admin_card card_customer">
+                  <h3>Customers</h3>
+                </div>
+                <div className="admin_card card_booking">
+                  <h3>Booking</h3>
+                </div>
+                <div className="admin_card card_payment">
+                  <h3>Payment</h3>
+                </div>
+              </Item>
             </Grid>
           </Item>
         </Grid>
