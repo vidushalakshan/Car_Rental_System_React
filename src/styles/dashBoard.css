@@ -127,4 +127,21 @@
     color: aliceblue;
 }
 
+.admin_card {
+    border: 1px solid red;
+    width: 25%;
+    height: 100px;
+}
+
+.grid {
+    position: relative;
+}
+
+
+.card_driver {
+    position: absolute;
+    left: 338px;
+    top: 8px;
+}
+
 

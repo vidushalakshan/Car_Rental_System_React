@@ -1,7 +1,6 @@
 import React from "react";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
-import Button from "@mui/material/Button";
 import "../../src/styles/dashBoard.css";
 import DashboardIcon from "@mui/icons-material/Dashboard";
 import AdminPanelSettingsIcon from "@mui/icons-material/AdminPanelSettings";
@@ -21,7 +20,7 @@ import InputBase from "@mui/material/InputBase";
 import Badge from "@mui/material/Badge";
 import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
-import MenuIcon from "@mui/icons-material/Menu";
+
 import SearchIcon from "@mui/icons-material/Search";
 import AccountCircle from "@mui/icons-material/AccountCircle";
 import MailIcon from "@mui/icons-material/Mail";
@@ -301,10 +300,29 @@ const DashBoard = () => {
               </AppBar>
               {renderMobileMenu}
               {renderMenu}
-              <div>
-                <h1>Vihanga</h1>
-              </div>
             </Box>
+            <Grid item xs={12} className="grid">
+                <Item className="card">
+                    <div className="admin_card">
+                        <h3>Admin</h3>
+                    </div>
+                    <div className="admin_card card_driver">
+                        <h3>Drivers</h3>
+                    </div>
+                    <div className="admin_card">
+                        <h3>Cars</h3>
+                    </div>
+                    <div className="admin_card">
+                        <h3>Customers</h3>
+                    </div>
+                    <div className="admin_card">
+                        <h3>Booking</h3>
+                    </div>
+                    <div className="admin_card">
+                        <h3>Payment</h3>
+                    </div>
+                </Item>
+            </Grid>
           </Item>
         </Grid>
       </Grid>
