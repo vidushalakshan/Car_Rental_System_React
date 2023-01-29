@@ -333,7 +333,12 @@ const DashBoard = () => {
                     <div className="car_logo">
                         <CarRentalIcon className="car_icon"></CarRentalIcon>
                     </div>
-                  <h3>Cars</h3>
+                    <hr className="hr"></hr>
+                    <div className="driver_box">
+                        <h3>Cars</h3> 
+                        <span>30</span>
+                    </div>
+                    <span className="text_driver">+55% than lask week</span>
                 </div>
 
 
