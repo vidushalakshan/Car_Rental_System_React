@@ -269,4 +269,28 @@
     color: aliceblue;
 }
 
+.car_logo {
+    width: 22%;
+    height: 40%;
+    position: absolute;
+    top: -12%;
+    left: 4%;
+    opacity: 1;
+    background-color: tomato;
+    color: rgb(255, 255, 255);
+    border-radius: 0.75rem;
+    box-shadow: rgb(0 0 0 / 14%) 0rem 0.25rem 1.25rem 0rem, rgb(64 64 64 / 40%) 0rem 0.4375rem 0.625rem -0.3125rem;
+}
+
+.car_icon {
+    color: aliceblue;
+    width: 44% !important;
+    height: 48% !important;
+    align-items: center;
+    position: absolute;
+    top: 23%;
+    right: 27%; 
+}
+
+
 

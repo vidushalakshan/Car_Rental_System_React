@@ -330,6 +330,9 @@ const DashBoard = () => {
 
 
                 <div className="admin_card card_cars">
+                    <div className="car_logo">
+                        <CarRentalIcon className="car_icon"></CarRentalIcon>
+                    </div>
                   <h3>Cars</h3>
                 </div>
 
