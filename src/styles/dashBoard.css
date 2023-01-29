@@ -150,6 +150,9 @@
     position: absolute;
     left: 394px;
     top: 8px;
+    background: linear-gradient(rgb(255, 145, 157) 0%, rgb(252, 146, 157) 100%);
+    box-shadow: rgb(253 192 199) 0px 10px 20px 0px;
+    opacity: 1;
 }
 
 .card_cars {
@@ -216,7 +219,9 @@
 }
 
 .card_admin {
-    background: linear-gradient(180deg, #BB67FF 0%, #C484F3 100%);
+    background: linear-gradient(rgb(187, 103, 255) 0%, rgb(196, 132, 243) 100%);
+    box-shadow: rgb(224 198 245) 0px 10px 20px 0px;
+    opacity: 1;
 }
 
 .title_box > h3 {
@@ -235,7 +240,7 @@
         top: -12%;
         left: 5%;
         opacity: 1;
-        background: linear-gradient(195deg, rgb(66, 66, 74), rgb(25, 25, 25));
+        background-color: blue;
         color: rgb(255, 255, 255);
         border-radius: 0.75rem;
         box-shadow: rgb(0 0 0 / 14%) 0rem 0.25rem 1.25rem 0rem, rgb(64 64 64 / 40%) 0rem 0.4375rem 0.625rem -0.3125rem;
@@ -248,3 +253,20 @@
     top: 22%;
     right: 31%;
 }
+
+.driver_box {
+    width: 28%;
+    position: absolute;
+    left: 71%;
+    color: aliceblue;
+}
+
+.text_driver {
+    position: relative;
+    top: 72%;
+    left: -23%;
+    height: 0.0625rem;
+    color: aliceblue;
+}
+
+

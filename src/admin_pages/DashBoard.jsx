@@ -320,17 +320,30 @@ const DashBoard = () => {
                     <div className="driver_logo">
                         <AirlineSeatReclineExtraIcon className="driver_icon"></AirlineSeatReclineExtraIcon>
                     </div>
-                  <h3>Drivers</h3>
+                    <hr className="hr"></hr>
+                    <div className="driver_box">
+                        <h3>Drivers</h3>
+                        <span>23</span>
+                    </div>
+                    <span className="text_driver">+55% than lask week</span>
                 </div>
+
+
                 <div className="admin_card card_cars">
                   <h3>Cars</h3>
                 </div>
+
+
                 <div className="admin_card card_customer">
                   <h3>Customers</h3>
                 </div>
+
+
                 <div className="admin_card card_booking">
                   <h3>Booking</h3>
                 </div>
+
+
                 <div className="admin_card card_payment">
                   <h3>Payment</h3>
                 </div>
