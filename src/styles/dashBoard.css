@@ -228,5 +228,23 @@
     color: whitesmoke;
 }
 
+.driver_logo {
+        width: 24%;
+        height: 38%;
+        position: absolute;
+        top: -12%;
+        left: 5%;
+        opacity: 1;
+        background: linear-gradient(195deg, rgb(66, 66, 74), rgb(25, 25, 25));
+        color: rgb(255, 255, 255);
+        border-radius: 0.75rem;
+        box-shadow: rgb(0 0 0 / 14%) 0rem 0.25rem 1.25rem 0rem, rgb(64 64 64 / 40%) 0rem 0.4375rem 0.625rem -0.3125rem;
+}
 
-
+.driver_icon {
+    width: 36%!important;
+    height: 53% !important;
+    position: absolute;
+    top: 22%;
+    right: 31%;
+}

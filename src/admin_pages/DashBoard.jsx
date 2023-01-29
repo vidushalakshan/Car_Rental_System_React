@@ -314,7 +314,12 @@ const DashBoard = () => {
                   </div>
                   <span className="text_dash">+55% than lask week</span>
                 </div>
+
+
                 <div className="admin_card card_driver">
+                    <div className="driver_logo">
+                        <AirlineSeatReclineExtraIcon className="driver_icon"></AirlineSeatReclineExtraIcon>
+                    </div>
                   <h3>Drivers</h3>
                 </div>
                 <div className="admin_card card_cars">
