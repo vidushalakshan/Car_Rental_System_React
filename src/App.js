@@ -8,11 +8,7 @@ import HotOffers from "./components/pages/HotOffers";
 import Contact from "./components/common/contact/Contact";
 import DashBoard from "./admin_pages/DashBoard";
 
-
 function App() {
-
-  const isBackgroundRed = true;
-  
   return (
     <div>
       <DashBoard/>

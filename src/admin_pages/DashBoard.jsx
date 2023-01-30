@@ -27,6 +27,8 @@ import MailIcon from "@mui/icons-material/Mail";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import MoreIcon from "@mui/icons-material/MoreVert";
 
+import "../data/script"
+
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
   borderRadius: theme.shape.borderRadius,
@@ -184,13 +186,13 @@ const DashBoard = () => {
               <div className="page_link">
                 <ul className="dash_btn">
                   <li className="page">
-                    <h3 className="dashboard">
+                    <h3 className="dashboard" id="dashLink">
                       <DashboardIcon className="icon_dash page_icon"></DashboardIcon>
                       Dashboard
                     </h3>
                   </li>
                   <li className="page">
-                    <h3 className="admin">
+                    <h3 className="admin" id="adminLink">
                       <AdminPanelSettingsIcon className="admin_dash page_icon"></AdminPanelSettingsIcon>
                       Admin
                     </h3>
@@ -230,6 +232,7 @@ const DashBoard = () => {
             </div>
           </Item>
         </Grid>
+
         <Grid item xs={9}>
           <Item>
             <Box sx={{ flexGrow: 1 }}>
@@ -301,8 +304,9 @@ const DashBoard = () => {
               {renderMobileMenu}
               {renderMenu}
             </Box>
+
             <Grid item xs={12} className="grid">
-              <Item className="card">
+              <Item className="card" id="dash">
                 <div className="admin_card card_admin">
                   <div className="admin_logo">
                     <AdminPanelSettingsIcon className="admin_icon"></AdminPanelSettingsIcon>
@@ -343,6 +347,9 @@ const DashBoard = () => {
 
 
                 <div className="admin_card card_customer">
+                  <div className="customer_logo">
+                     <AccountCircleIcon className="customer_icon"></AccountCircleIcon>
+                  </div>
                   <h3>Customers</h3>
                 </div>
 
@@ -355,6 +362,10 @@ const DashBoard = () => {
                 <div className="admin_card card_payment">
                   <h3>Payment</h3>
                 </div>
+
+                <section id="admin">
+        <h1>Hellow</h1>
+      </section>
               </Item>
             </Grid>
           </Item>

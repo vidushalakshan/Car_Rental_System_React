@@ -295,5 +295,11 @@
     right: 27%; 
 }
 
+.card_customer {
+    background: linear-gradient(rgb(79, 196, 2) -146.42%, rgb(6, 187, 45) -46.42%);
+    box-shadow: rgb(31, 240, 8) 0px 10px 20px 0px;
+    opacity: 1;
+}
+
 
 
