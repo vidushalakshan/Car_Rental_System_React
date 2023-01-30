@@ -350,7 +350,11 @@ const DashBoard = () => {
                   <div className="customer_logo">
                      <AccountCircleIcon className="customer_icon"></AccountCircleIcon>
                   </div>
-                  <h3>Customers</h3>
+                  <hr className="hr"></hr>
+                  <div className="driver_box">
+                    <h3>Customers</h3>
+                    <span>53</span>
+                  </div>
                 </div>
 
 
