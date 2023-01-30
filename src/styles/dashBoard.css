@@ -182,17 +182,17 @@
 }
 
 .admin_logo {
-   
     width: 7%;
-    height: 13%;
+    height: 11%;
     position: absolute;
     top: 11%;
     left: 2%;
     opacity: 1;
-    background: linear-gradient(195deg, rgb(66, 66, 74), rgb(25, 25, 25));
+    background-color: rgb(23, 9, 6);
     color: rgb(255, 255, 255);
     border-radius: 0.75rem;
-    box-shadow: rgb(0 0 0 / 14%) 0rem 0.25rem 1.25rem 0rem, rgb(64 64 64 / 40%) 0rem 0.4375rem 0.625rem -0.3125rem;
+    box-shadow: rgba(246, 7, 7, 0.14) 0rem 0.25rem 1.25rem 0rem, rgb(64 64 64 / 40%) 0rem 0.4375rem 0.625rem -0.3125rem;
+   
 }
 
 .admin_icon {
@@ -202,7 +202,7 @@
     align-items: center;
     position: absolute;
     top: 23%;
-    right: 27%;
+    right: 27%; 
 }
 
 .hr {
@@ -237,16 +237,16 @@
 }
 
 .driver_logo {
-        width: 24%;
-        height: 38%;
-        position: absolute;
-        top: -12%;
-        left: 5%;
-        opacity: 1;
-        background-color: blue;
-        color: rgb(255, 255, 255);
-        border-radius: 0.75rem;
-        box-shadow: rgb(0 0 0 / 14%) 0rem 0.25rem 1.25rem 0rem, rgb(64 64 64 / 40%) 0rem 0.4375rem 0.625rem -0.3125rem;
+    width: 22%;
+    height: 40%;
+    position: absolute;
+    top: -12%;
+    left: 4%;
+    opacity: 1;
+    background-color: rgb(13, 59, 210);
+    color: rgb(255, 255, 255);
+    border-radius: 0.75rem;
+    box-shadow: rgb(0 0 0 / 14%) 0rem 0.25rem 1.25rem 0rem, rgb(64 64 64 / 40%) 0rem 0.4375rem 0.625rem -0.3125rem;
 }
 
 .driver_icon {
@@ -308,7 +308,7 @@
     top: -12%;
     left: 4%;
     opacity: 1;
-    background-color: tomato;
+    background-color: rgb(247, 2, 2);
     color: rgb(255, 255, 255);
     border-radius: 0.75rem;
     box-shadow: rgb(0 0 0 / 14%) 0rem 0.25rem 1.25rem 0rem, rgb(64 64 64 / 40%) 0rem 0.4375rem 0.625rem -0.3125rem;

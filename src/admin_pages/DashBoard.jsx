@@ -316,7 +316,7 @@ const DashBoard = () => {
                     <h3>Admin</h3>
                     <span>23</span>
                   </div>
-                  <span className="text_dash">+55% than lask week</span>
+                  <span className="text_driver">+55% than lask week</span>
                 </div>
 
 
@@ -355,6 +355,7 @@ const DashBoard = () => {
                     <h3>Customers</h3>
                     <span>53</span>
                   </div>
+                  <span className="text_driver">+55% than lask week</span>
                 </div>
 
 
