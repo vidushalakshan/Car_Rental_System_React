@@ -364,7 +364,7 @@ const DashBoard = () => {
                       <h3>Booking</h3>
                       <span>53</span>
                   </div>
-                  <span className="text_driver">+55% than lask week</span>
+                  <span className="text_booking">+55% than lask week</span>
                 </div>
 
                 <div className="admin_card card_payment">

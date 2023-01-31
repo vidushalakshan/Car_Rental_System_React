@@ -183,7 +183,7 @@
 
 .admin_logo {
     width: 7%;
-    height: 11%;
+    height: 13%;
     position: absolute;
     top: 11%;
     left: 2%;
@@ -357,6 +357,13 @@
     position: relative;
     position: relative;
     left: 38%;
+    color: white;
+}
+
+.text_booking {
+    position: relative;
+    top: 37%;
+    right: 23%;
     color: white;
 }
 
