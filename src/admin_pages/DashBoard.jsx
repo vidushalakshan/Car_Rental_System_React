@@ -368,6 +368,9 @@ const DashBoard = () => {
                 </div>
 
                 <div className="admin_card card_payment">
+                  <div className="payment_logo">
+                      
+                  </div>
                   <h3>Payment</h3>
                 </div>
               </Item>

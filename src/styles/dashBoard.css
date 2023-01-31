@@ -328,7 +328,7 @@
     width: 7%;
     height: 13%;
     position: absolute;
-    top: 62%;
+    top: 61%;
     left: 2%;
     opacity: 1;
     background-color: rgb(53, 254, 100);
@@ -365,5 +365,18 @@
     top: 37%;
     right: 23%;
     color: white;
+}
+
+.payment_logo {
+    width: 22%;
+    height: 40%;
+    position: absolute;
+    top: -12%;
+    left: 4%;
+    opacity: 1;
+    background-color: rgb(162, 193, 7);
+    color: rgb(255, 255, 255);
+    border-radius: 0.75rem;
+    box-shadow: rgba(246, 7, 7, 0.14) 0rem 0.25rem 1.25rem 0rem, rgb(64 64 64 / 40%) 0rem 0.4375rem 0.625rem -0.3125rem;
 }
 
