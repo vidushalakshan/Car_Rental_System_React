@@ -371,7 +371,11 @@ const DashBoard = () => {
                   <div className="payment_logo">
                       <PaymentsIcon className="customer_icon"></PaymentsIcon>
                   </div>
-                  <h3>Payment</h3>
+                  <hr className="hr"></hr>
+                  <div className="driver_box">
+                    <h3>Payment</h3>
+                    <span>53</span>
+                  </div>
                 </div>
               </Item>
             </Grid>

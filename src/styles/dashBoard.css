@@ -380,3 +380,8 @@
     box-shadow: rgba(246, 7, 7, 0.14) 0rem 0.25rem 1.25rem 0rem, rgb(64 64 64 / 40%) 0rem 0.4375rem 0.625rem -0.3125rem;
 }
 
+.card_payment {
+    background: linear-gradient(rgb(73 70 238) -146.42%, rgb(92 113 248) -46.42%);
+    box-shadow: rgb(8 49 240) 0px 10px 20px 0px;
+    opacity: 1;
+}
