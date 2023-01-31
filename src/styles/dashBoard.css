@@ -347,4 +347,16 @@
     right: 27%; 
 }
 
+.card_booking {
+    background: linear-gradient(rgb(220 105 105) -146.42%, rgb(248 92 131) -46.42%);
+    box-shadow: rgb(240 8 59) 0px 10px 20px 0px;
+    opacity: 1;
+}
+
+.booking_details {
+    position: relative;
+    position: relative;
+    left: 38%;
+    color: white;
+}
 

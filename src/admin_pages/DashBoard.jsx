@@ -360,7 +360,11 @@ const DashBoard = () => {
                     <LibraryBooksIcon className="booking_icon"></LibraryBooksIcon>
                   </div>
                   <hr className="hr"></hr>
-                  <h3>Booking</h3>
+                  <div className="booking_details">
+                      <h3>Booking</h3>
+                      <span>53</span>
+                  </div>
+                  <span className="text_driver">+55% than lask week</span>
                 </div>
 
                 <div className="admin_card card_payment">
