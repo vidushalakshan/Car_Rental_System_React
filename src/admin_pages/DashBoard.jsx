@@ -360,6 +360,9 @@ const DashBoard = () => {
 
 
                 <div className="admin_card card_booking">
+                  <div className="booking_logo">
+                     <LibraryBooksIcon className="booking_icon"></LibraryBooksIcon>
+                  </div>
                   <h3>Booking</h3>
                 </div>
 

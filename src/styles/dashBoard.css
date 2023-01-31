@@ -324,5 +324,18 @@
     right: 27%; 
 }
 
+.booking_logo {
+    width: 7%;
+    height: 11%;
+    position: absolute;
+    top: 54%;
+    left: 2%;
+    opacity: 1;
+    background-color: rgb(2 247 125);
+    color: rgb(255, 255, 255);
+    border-radius: 0.75rem;
+    box-shadow: rgb(0 0 0 / 14%) 0rem 0.25rem 1.25rem 0rem, rgb(64 64 64 / 40%) 0rem 0.4375rem 0.625rem -0.3125rem;
+}
+
 
 
