@@ -27,7 +27,7 @@ import MailIcon from "@mui/icons-material/Mail";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import MoreIcon from "@mui/icons-material/MoreVert";
 
-import "../data/script"
+import "../data/script";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -319,36 +319,33 @@ const DashBoard = () => {
                   <span className="text_driver">+55% than lask week</span>
                 </div>
 
-
                 <div className="admin_card card_driver">
-                    <div className="driver_logo">
-                        <AirlineSeatReclineExtraIcon className="driver_icon"></AirlineSeatReclineExtraIcon>
-                    </div>
-                    <hr className="hr"></hr>
-                    <div className="driver_box">
-                        <h3>Drivers</h3>
-                        <span>23</span>
-                    </div>
-                    <span className="text_driver">+55% than lask week</span>
+                  <div className="driver_logo">
+                    <AirlineSeatReclineExtraIcon className="driver_icon"></AirlineSeatReclineExtraIcon>
+                  </div>
+                  <hr className="hr"></hr>
+                  <div className="driver_box">
+                    <h3>Drivers</h3>
+                    <span>23</span>
+                  </div>
+                  <span className="text_driver">+55% than lask week</span>
                 </div>
-
 
                 <div className="admin_card card_cars">
-                    <div className="car_logo">
-                        <CarRentalIcon className="car_icon"></CarRentalIcon>
-                    </div>
-                    <hr className="hr"></hr>
-                    <div className="driver_box">
-                        <h3>Cars</h3> 
-                        <span>30</span>
-                    </div>
-                    <span className="text_driver">+55% than lask week</span>
+                  <div className="car_logo">
+                    <CarRentalIcon className="car_icon"></CarRentalIcon>
+                  </div>
+                  <hr className="hr"></hr>
+                  <div className="driver_box">
+                    <h3>Cars</h3>
+                    <span>30</span>
+                  </div>
+                  <span className="text_driver">+55% than lask week</span>
                 </div>
 
-
                 <div className="admin_card card_customer">
-                  <div className="customer_logo">
-                     <AccountCircleIcon className="customer_icon"></AccountCircleIcon>
+                  <div className="car_logo">
+                    <AccountCircleIcon className="customer_icon"></AccountCircleIcon>
                   </div>
                   <hr className="hr"></hr>
                   <div className="driver_box">
@@ -358,22 +355,17 @@ const DashBoard = () => {
                   <span className="text_driver">+55% than lask week</span>
                 </div>
 
-
                 <div className="admin_card card_booking">
                   <div className="booking_logo">
-                     <LibraryBooksIcon className="booking_icon"></LibraryBooksIcon>
+                    <LibraryBooksIcon className="booking_icon"></LibraryBooksIcon>
                   </div>
+                  <hr className="hr"></hr>
                   <h3>Booking</h3>
                 </div>
-
 
                 <div className="admin_card card_payment">
                   <h3>Payment</h3>
                 </div>
-
-                <section id="admin">
-        <h1>Hellow</h1>
-      </section>
               </Item>
             </Grid>
           </Item>
