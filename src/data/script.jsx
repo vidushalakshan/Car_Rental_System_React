@@ -1,9 +1,13 @@
-import React from 'react';
 import $ from 'jquery';
 
-$("#admin").css("display", "none");
+$("#dash").css("display", "none");
 
-$("#adminLink").bind('click', function(){
+$("#adminLink").click(function () {
     $("#dash").css("display", "none");
     $("#admin").css("display", "block");
+});
+
+$("#dashLink").click(function () {
+    $("#dash").css("display", "block");
+    $("#admin").css("display", "none");
 });

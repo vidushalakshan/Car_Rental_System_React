@@ -187,44 +187,58 @@ const DashBoard = () => {
                 <ul className="dash_btn">
                   <li className="page">
                     <h3 className="dashboard" id="dashLink">
+                    <a href="#">
                       <DashboardIcon className="icon_dash page_icon"></DashboardIcon>
                       Dashboard
+                      </a>
                     </h3>
                   </li>
                   <li className="page">
                     <h3 className="admin" id="adminLink">
+                      <a href="#">
                       <AdminPanelSettingsIcon className="admin_dash page_icon"></AdminPanelSettingsIcon>
                       Admin
+                      </a>
                     </h3>
                   </li>
                   <li className="page">
                     <h3 className="driver">
+                      <a href="#">
                       <AirlineSeatReclineExtraIcon className="driver_dash page_icon"></AirlineSeatReclineExtraIcon>
                       Drivers
+                      </a>
                     </h3>
                   </li>
                   <li className="page">
                     <h3 className="customer">
+                      <a href="#">
                       <AccountCircleIcon className="customer_dash page_icon"></AccountCircleIcon>
                       Customers
+                      </a>
                     </h3>
                   </li>
                   <li className="page">
                     <h3 className="car">
+                      <a href="#">
                       <CarRentalIcon className="car_dash page_icon"></CarRentalIcon>
                       Cars
+                      </a>
                     </h3>
                   </li>
                   <li className="page">
                     <h3 className="booking">
+                      <a href="#">
                       <LibraryBooksIcon className="booking_dash page_icon"></LibraryBooksIcon>
                       Booking
+                      </a>
                     </h3>
                   </li>
                   <li className="page">
                     <h3 className="payment">
+                      <a href="#">
                       <PaymentsIcon className="payment_dash page_icon"></PaymentsIcon>
                       Payment
+                      </a>
                     </h3>
                   </li>
                 </ul>
@@ -379,6 +393,9 @@ const DashBoard = () => {
                 </div>
               </Item>
             </Grid>
+            <div className="admin">
+              <h1>Hellow java...</h1>
+            </div>
           </Item>
         </Grid>
       </Grid>
