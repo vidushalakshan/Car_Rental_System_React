@@ -187,7 +187,7 @@ const DashBoard = () => {
                 <ul className="dash_btn">
                   <li className="page">
                     <h3 className="dashboard" id="dashLink">
-                    <a href="#">
+                    <a href="#" className="link">
                       <DashboardIcon className="icon_dash page_icon"></DashboardIcon>
                       Dashboard
                       </a>
@@ -195,7 +195,7 @@ const DashBoard = () => {
                   </li>
                   <li className="page">
                     <h3 className="admin" id="adminLink">
-                      <a href="#">
+                      <a href="#" className="link">
                       <AdminPanelSettingsIcon className="admin_dash page_icon"></AdminPanelSettingsIcon>
                       Admin
                       </a>
@@ -203,7 +203,7 @@ const DashBoard = () => {
                   </li>
                   <li className="page">
                     <h3 className="driver">
-                      <a href="#">
+                      <a href="#" className="link">
                       <AirlineSeatReclineExtraIcon className="driver_dash page_icon"></AirlineSeatReclineExtraIcon>
                       Drivers
                       </a>
@@ -211,7 +211,7 @@ const DashBoard = () => {
                   </li>
                   <li className="page">
                     <h3 className="customer">
-                      <a href="#">
+                      <a href="#" className="link">
                       <AccountCircleIcon className="customer_dash page_icon"></AccountCircleIcon>
                       Customers
                       </a>
@@ -219,7 +219,7 @@ const DashBoard = () => {
                   </li>
                   <li className="page">
                     <h3 className="car">
-                      <a href="#">
+                      <a href="#" className="link">
                       <CarRentalIcon className="car_dash page_icon"></CarRentalIcon>
                       Cars
                       </a>
@@ -227,7 +227,7 @@ const DashBoard = () => {
                   </li>
                   <li className="page">
                     <h3 className="booking">
-                      <a href="#">
+                      <a href="#" className="link">
                       <LibraryBooksIcon className="booking_dash page_icon"></LibraryBooksIcon>
                       Booking
                       </a>
@@ -235,7 +235,7 @@ const DashBoard = () => {
                   </li>
                   <li className="page">
                     <h3 className="payment">
-                      <a href="#">
+                      <a href="#" className="link">
                       <PaymentsIcon className="payment_dash page_icon"></PaymentsIcon>
                       Payment
                       </a>
