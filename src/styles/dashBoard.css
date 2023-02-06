@@ -391,3 +391,8 @@
     color: whitesmoke;
 }
 
+.admin_content {
+    position: absolute;
+    left: 31%;
+    top: 16%;
+}

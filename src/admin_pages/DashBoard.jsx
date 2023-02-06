@@ -1,4 +1,3 @@
-import React from "react";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import "../../src/styles/dashBoard.css";
@@ -26,6 +25,8 @@ import AccountCircle from "@mui/icons-material/AccountCircle";
 import MailIcon from "@mui/icons-material/Mail";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import MoreIcon from "@mui/icons-material/MoreVert";
+import * as React from "react";
+import TextField from "@mui/material/TextField";
 
 import "../data/script";
 
@@ -187,58 +188,58 @@ const DashBoard = () => {
               <div className="page_link">
                 <ul className="dash_btn">
                   <li className="page" id="dashLink">
-                    <h3 className="dashboard" >
-                    <a href="#" className="link">
-                      <DashboardIcon className="icon_dash page_icon"></DashboardIcon>
-                      Dashboard
+                    <h3 className="dashboard">
+                      <a href="#" className="link">
+                        <DashboardIcon className="icon_dash page_icon"></DashboardIcon>
+                        Dashboard
                       </a>
                     </h3>
                   </li>
                   <li className="page" id="adminLink">
                     <h3 className="admin">
                       <a href="#" className="link">
-                      <AdminPanelSettingsIcon className="admin_dash page_icon"></AdminPanelSettingsIcon>
-                      Admin
+                        <AdminPanelSettingsIcon className="admin_dash page_icon"></AdminPanelSettingsIcon>
+                        Admin
                       </a>
                     </h3>
                   </li>
                   <li className="page" id="driverLink">
                     <h3 className="driver">
                       <a href="#" className="link">
-                      <AirlineSeatReclineExtraIcon className="driver_dash page_icon"></AirlineSeatReclineExtraIcon>
-                      Drivers
+                        <AirlineSeatReclineExtraIcon className="driver_dash page_icon"></AirlineSeatReclineExtraIcon>
+                        Drivers
                       </a>
                     </h3>
                   </li>
                   <li className="page" id="customerLink">
                     <h3 className="customer">
                       <a href="#" className="link">
-                      <AccountCircleIcon className="customer_dash page_icon"></AccountCircleIcon>
-                      Customers
+                        <AccountCircleIcon className="customer_dash page_icon"></AccountCircleIcon>
+                        Customers
                       </a>
                     </h3>
                   </li>
                   <li className="page" id="carLink">
                     <h3 className="car">
                       <a href="#" className="link">
-                      <CarRentalIcon className="car_dash page_icon"></CarRentalIcon>
-                      Cars
+                        <CarRentalIcon className="car_dash page_icon"></CarRentalIcon>
+                        Cars
                       </a>
                     </h3>
                   </li>
                   <li className="page" id="bookingLink">
                     <h3 className="booking">
                       <a href="#" className="link">
-                      <LibraryBooksIcon className="booking_dash page_icon"></LibraryBooksIcon>
-                      Booking
+                        <LibraryBooksIcon className="booking_dash page_icon"></LibraryBooksIcon>
+                        Booking
                       </a>
                     </h3>
                   </li>
                   <li className="page" id="paymentLink">
                     <h3 className="payment">
                       <a href="#">
-                      <PaymentsIcon className="payment_dash page_icon"></PaymentsIcon>
-                      Payment
+                        <PaymentsIcon className="payment_dash page_icon"></PaymentsIcon>
+                        Payment
                       </a>
                     </h3>
                   </li>
@@ -384,15 +385,15 @@ const DashBoard = () => {
                   </div>
                   <hr className="hr"></hr>
                   <div className="booking_details">
-                      <h3>Booking</h3>
-                      <span>53</span>
+                    <h3>Booking</h3>
+                    <span>53</span>
                   </div>
                   <span className="text_booking">+55% than lask week</span>
                 </div>
 
                 <div className="admin_card card_payment">
                   <div className="payment_logo">
-                      <PaymentsIcon className="customer_icon"></PaymentsIcon>
+                    <PaymentsIcon className="customer_icon"></PaymentsIcon>
                   </div>
                   <hr className="hr"></hr>
                   <div className="driver_box">
@@ -405,12 +406,72 @@ const DashBoard = () => {
             </Grid>
 
             {/* end dashboard content */}
+          </Item>
+        </Grid>
+      </Grid>
 
-            <Grid item xs={12} className="grid" id="admin">
+      {/* start admin content */}
+
+      <Grid container spacing={4}>
+        <Grid item xs={4} id="admin">
+          <Item className="admin_content">
+            <Box 
+              component="form"
+              sx={{
+                "& .MuiTextField-root": { m: 3, width: "50ch" },
+              }}
+              noValidate
+              autoComplete="off"
+            >
               <div>
-                <h1>Hellow java...</h1>
+                <TextField
+                  id="standard-textarea"
+                  label="Admin_Id"
+                  placeholder="Admin_Id"
+                  multiline
+                  variant="standard"
+                />
+                <TextField
+                  id="standard-textarea"
+                  label="Full_Name"
+                  placeholder="FullName"
+                  multiline
+                  variant="standard"
+                />
               </div>
-            </Grid>
+              <div>
+                <TextField
+                  id="standard-textarea"
+                  label="Address"
+                  placeholder="Address"
+                  multiline
+                  variant="standard"
+                />
+                <TextField
+                 id="standard-textarea"
+                 label="Mobile_Number"
+                 placeholder="Mobile Number"
+                 multiline
+                 variant="standard"
+                />
+              </div>
+              <div>
+                <TextField
+                  id="standard-textarea"
+                  label="Password"
+                  placeholder="Password"
+                  multiline
+                  variant="standard"
+                />
+                <TextField
+                  id="standard-textarea"
+                  label="Email"
+                  placeholder="Email"
+                  multiline
+                  variant="standard"
+                />
+              </div>
+            </Box>
           </Item>
         </Grid>
       </Grid>

@@ -1,6 +1,6 @@
 import $ from 'jquery';
 
-$("#dash").css("display", "none");
+$("#admin").css("display", "none");
 
 $("#adminLink").click(function () {
     $("#dash").css("display", "none");
