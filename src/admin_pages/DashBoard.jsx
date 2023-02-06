@@ -178,6 +178,7 @@ const DashBoard = () => {
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={3}>
         <Grid item xs={2.5}>
+          {/* start slide nav bar */}
           <Item>
             <div className="dash_page">
               <FlutterDashRoundedIcon className="dashIcon"></FlutterDashRoundedIcon>
@@ -185,23 +186,23 @@ const DashBoard = () => {
               <hr></hr>
               <div className="page_link">
                 <ul className="dash_btn">
-                  <li className="page">
-                    <h3 className="dashboard" id="dashLink">
+                  <li className="page" id="dashLink">
+                    <h3 className="dashboard" >
                     <a href="#" className="link">
                       <DashboardIcon className="icon_dash page_icon"></DashboardIcon>
                       Dashboard
                       </a>
                     </h3>
                   </li>
-                  <li className="page">
-                    <h3 className="admin" id="adminLink">
+                  <li className="page" id="adminLink">
+                    <h3 className="admin">
                       <a href="#" className="link">
                       <AdminPanelSettingsIcon className="admin_dash page_icon"></AdminPanelSettingsIcon>
                       Admin
                       </a>
                     </h3>
                   </li>
-                  <li className="page">
+                  <li className="page" id="driverLink">
                     <h3 className="driver">
                       <a href="#" className="link">
                       <AirlineSeatReclineExtraIcon className="driver_dash page_icon"></AirlineSeatReclineExtraIcon>
@@ -209,7 +210,7 @@ const DashBoard = () => {
                       </a>
                     </h3>
                   </li>
-                  <li className="page">
+                  <li className="page" id="customerLink">
                     <h3 className="customer">
                       <a href="#" className="link">
                       <AccountCircleIcon className="customer_dash page_icon"></AccountCircleIcon>
@@ -217,7 +218,7 @@ const DashBoard = () => {
                       </a>
                     </h3>
                   </li>
-                  <li className="page">
+                  <li className="page" id="carLink">
                     <h3 className="car">
                       <a href="#" className="link">
                       <CarRentalIcon className="car_dash page_icon"></CarRentalIcon>
@@ -225,7 +226,7 @@ const DashBoard = () => {
                       </a>
                     </h3>
                   </li>
-                  <li className="page">
+                  <li className="page" id="bookingLink">
                     <h3 className="booking">
                       <a href="#" className="link">
                       <LibraryBooksIcon className="booking_dash page_icon"></LibraryBooksIcon>
@@ -233,9 +234,9 @@ const DashBoard = () => {
                       </a>
                     </h3>
                   </li>
-                  <li className="page">
+                  <li className="page" id="paymentLink">
                     <h3 className="payment">
-                      <a href="#" className="link">
+                      <a href="#">
                       <PaymentsIcon className="payment_dash page_icon"></PaymentsIcon>
                       Payment
                       </a>
@@ -246,6 +247,10 @@ const DashBoard = () => {
             </div>
           </Item>
         </Grid>
+
+        {/* end slide nav bar */}
+
+        {/* start top nav bar */}
 
         <Grid item xs={9}>
           <Item>
@@ -319,8 +324,12 @@ const DashBoard = () => {
               {renderMenu}
             </Box>
 
-            <Grid item xs={12} className="grid">
-              <Item className="card" id="dash">
+            {/* end top nav bar */}
+
+            {/* start dashboard content */}
+
+            <Grid item xs={12} className="grid" id="dash">
+              <Item className="card">
                 <div className="admin_card card_admin">
                   <div className="admin_logo">
                     <AdminPanelSettingsIcon className="admin_icon"></AdminPanelSettingsIcon>
@@ -390,12 +399,18 @@ const DashBoard = () => {
                     <h3>Payment</h3>
                     <span>53</span>
                   </div>
+                  <span className="text_driver">+55% than lask week</span>
                 </div>
               </Item>
             </Grid>
-            <div className="admin">
-              <h1>Hellow java...</h1>
-            </div>
+
+            {/* end dashboard content */}
+
+            <Grid item xs={12} className="grid" id="admin">
+              <div>
+                <h1>Hellow java...</h1>
+              </div>
+            </Grid>
           </Item>
         </Grid>
       </Grid>
