@@ -31,6 +31,7 @@ import TextField from "@mui/material/TextField";
 import "../data/script";
 import Admin from "./Admin";
 import Driver from "./Driver";
+import Cars from "./Cars";
 
 
 const Search = styled("div")(({ theme }) => ({
@@ -185,6 +186,7 @@ const DashBoard = () => {
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={3}>
         <Grid item xs={2.5}>
+
           {/* start slide nav bar */}
           <Item>
             <div className="dash_page">
@@ -427,12 +429,25 @@ const DashBoard = () => {
           </Grid>
         </Grid>
 
+        {/* driver content */}
 
         <Grid container spacing={2}>
           <Grid item xs={8}>
             <Item>
               <div id="driver">
                <Driver/>
+                </div>
+            </Item>
+          </Grid>
+        </Grid>
+
+        {/* Cars content */}
+
+        <Grid container spacing={2}>
+          <Grid item xs={8}>
+            <Item>
+              <div id="cars">
+               <Cars/>
                 </div>
             </Item>
           </Grid>
