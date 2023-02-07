@@ -4,6 +4,14 @@ import TextField from "@mui/material/TextField";
 import "../styles/admin/admin.css";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
+import Table from '@mui/material/Table';
+import TableBody from '@mui/material/TableBody';
+import TableCell from '@mui/material/TableCell';
+import TableContainer from '@mui/material/TableContainer';
+import TableHead from '@mui/material/TableHead';
+import TableRow from '@mui/material/TableRow';
+import Paper from '@mui/material/Paper';
+import { TableVirtuoso } from 'react-virtuoso';
 
 const Admin = () => {
   return (
@@ -15,6 +23,8 @@ const Admin = () => {
       noValidate
       autoComplete="off"
     >
+      {/* Start textField content */}
+
       <div className="txtAdmin">
         <TextField
           id="standard-textarea"
@@ -54,11 +64,15 @@ const Admin = () => {
         />
       </div>
 
+      {/* End textField content */}
+
       {/* Start button content */}
 
       <div className="btnAdmin">
         <Stack direction="row" spacing={2}>
-          <Button variant="contained" color="primary">Save</Button>
+          <Button variant="contained" color="primary">
+            Save
+          </Button>
           <Button variant="contained" color="success">
             Update
           </Button>
@@ -72,6 +86,35 @@ const Admin = () => {
       </div>
 
       {/* End button content */}
+
+      {/* Start table content */}
+
+      <div>
+      <table>
+            <thead>
+            <tr>
+                <th scope="col">Admin_ID</th>
+                <th scope="col">Name</th>
+                <th scope="col">Address</th>
+                <th scope="col">MobileNumber</th>
+                <th scope="col">Password</th>
+                <th scope="col">Email</th>
+                <th scope="col">Image</th>
+            </tr>
+            </thead>
+            <tbody id="adminbody">
+            <tr>
+                <th></th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            </tbody>
+        </table>
+      </div>
     </Box>
   );
 };

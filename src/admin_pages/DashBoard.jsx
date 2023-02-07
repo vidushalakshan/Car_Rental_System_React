@@ -30,6 +30,7 @@ import TextField from "@mui/material/TextField";
 
 import "../data/script";
 import Admin from "./Admin";
+import Driver from "./Driver";
 
 
 const Search = styled("div")(({ theme }) => ({
@@ -413,11 +414,25 @@ const DashBoard = () => {
             {/* end dashboard content */}
           </Item>
         </Grid>
+
+        {/* admin content */}
+
         <Grid container spacing={2}>
           <Grid item xs={8}>
             <Item>
               <div id="admin">
                <Admin/>
+                </div>
+            </Item>
+          </Grid>
+        </Grid>
+
+
+        <Grid container spacing={2}>
+          <Grid item xs={8}>
+            <Item>
+              <div id="driver">
+               <Driver/>
                 </div>
             </Item>
           </Grid>
