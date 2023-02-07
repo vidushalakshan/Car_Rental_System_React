@@ -2,6 +2,8 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import "../styles/admin/admin.css";
+import Stack from "@mui/material/Stack";
+import Button from "@mui/material/Button";
 
 const Admin = () => {
   return (
@@ -51,6 +53,25 @@ const Admin = () => {
           variant="standard"
         />
       </div>
+
+      {/* Start button content */}
+
+      <div className="btnAdmin">
+        <Stack direction="row" spacing={2}>
+          <Button variant="contained" color="primary">Save</Button>
+          <Button variant="contained" color="success">
+            Update
+          </Button>
+          <Button variant="contained" color="error">
+            Delete
+          </Button>
+          <Button variant="contained" color="secondary">
+            Clear
+          </Button>
+        </Stack>
+      </div>
+
+      {/* End button content */}
     </Box>
   );
 };
