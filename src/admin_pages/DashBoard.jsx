@@ -29,6 +29,8 @@ import * as React from "react";
 import TextField from "@mui/material/TextField";
 
 import "../data/script";
+import Admin from "./Admin";
+
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -175,7 +177,10 @@ const DashBoard = () => {
       </MenuItem>
     </Menu>
   );
+
+
   return (
+
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={3}>
         <Grid item xs={2.5}>
@@ -408,71 +413,14 @@ const DashBoard = () => {
             {/* end dashboard content */}
           </Item>
         </Grid>
-      </Grid>
-
-      {/* start admin content */}
-
-      <Grid container spacing={4}>
-        <Grid item xs={4} id="admin">
-          <Item className="admin_content">
-            <Box 
-              component="form"
-              sx={{
-                "& .MuiTextField-root": { m: 3, width: "50ch" },
-              }}
-              noValidate
-              autoComplete="off"
-            >
-              <div>
-                <TextField
-                  id="standard-textarea"
-                  label="Admin_Id"
-                  placeholder="Admin_Id"
-                  multiline
-                  variant="standard"
-                />
-                <TextField
-                  id="standard-textarea"
-                  label="Full_Name"
-                  placeholder="FullName"
-                  multiline
-                  variant="standard"
-                />
-              </div>
-              <div>
-                <TextField
-                  id="standard-textarea"
-                  label="Address"
-                  placeholder="Address"
-                  multiline
-                  variant="standard"
-                />
-                <TextField
-                 id="standard-textarea"
-                 label="Mobile_Number"
-                 placeholder="Mobile Number"
-                 multiline
-                 variant="standard"
-                />
-              </div>
-              <div>
-                <TextField
-                  id="standard-textarea"
-                  label="Password"
-                  placeholder="Password"
-                  multiline
-                  variant="standard"
-                />
-                <TextField
-                  id="standard-textarea"
-                  label="Email"
-                  placeholder="Email"
-                  multiline
-                  variant="standard"
-                />
-              </div>
-            </Box>
-          </Item>
+        <Grid container spacing={2}>
+          <Grid item xs={8}>
+            <Item>
+              <div id="admin">
+               <Admin/>
+                </div>
+            </Item>
+          </Grid>
         </Grid>
       </Grid>
     </Box>
