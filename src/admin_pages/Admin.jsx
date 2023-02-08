@@ -89,32 +89,7 @@ const Admin = () => {
 
       {/* Start table content */}
 
-      <div>
-      <table>
-            <thead>
-            <tr>
-                <th scope="col">Admin_ID</th>
-                <th scope="col">Name</th>
-                <th scope="col">Address</th>
-                <th scope="col">MobileNumber</th>
-                <th scope="col">Password</th>
-                <th scope="col">Email</th>
-                <th scope="col">Image</th>
-            </tr>
-            </thead>
-            <tbody id="adminbody">
-            <tr>
-                <th></th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            </tbody>
-        </table>
-      </div>
+     
     </Box>
   );
 };

@@ -35,7 +35,8 @@
     align-items: center;
     text-align: center;
     justify-content: end;
-
+    position: relative;
+    right: 3%;
 }
 
 .nav-links {
@@ -68,4 +69,8 @@
     color: white;
 }
 
+.login_btn {
+    position: relative;
+    right: 5%;
+}
 

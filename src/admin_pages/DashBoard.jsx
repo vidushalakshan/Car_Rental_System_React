@@ -185,7 +185,7 @@ const DashBoard = () => {
 
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={3}>
-        <Grid item xs={2.5}>
+        <Grid item xs={2.5} className="dash_fixed">
 
           {/* start slide nav bar */}
           <Item>
@@ -245,7 +245,7 @@ const DashBoard = () => {
                   </li>
                   <li className="page" id="paymentLink">
                     <h3 className="payment">
-                      <a href="#">
+                      <a href="#" className="link">
                         <PaymentsIcon className="payment_dash page_icon"></PaymentsIcon>
                         Payment
                       </a>

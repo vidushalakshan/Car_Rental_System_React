@@ -4,9 +4,14 @@ import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
+import DataTable from 'react-data-table-component';
+
+
 
 
 const Cars = () => {
+
+    
     return (
         <Box
         component="form"
@@ -21,67 +26,67 @@ const Cars = () => {
         <div className="txtAdmin">
           <TextField
             id="standard-textarea"
-            label="Driver_ID"
+            label="Register_Number"
             multiline
             variant="standard"
           />
           <TextField
             id="standard-textarea"
-            label="Full_Name"
+            label="Car_Availability"
             multiline
             variant="standard"
           />
           <TextField
             id="standard-textarea"
-            label="Address"
+            label="Car_Brand"
             multiline
             variant="standard"
           />
           <TextField
             id="standard-textarea"
-            label="Mobile_Number"
+            label="Car_Type"
             multiline
             variant="standard"
           />
           <TextField
             id="standard-textarea"
-            label="Password"
+            label="Car_Color"
             multiline
             variant="standard"
           />
           <TextField
             id="standard-textarea"
-            label="Email"
+            label="Transmission_Type"
             multiline
             variant="standard"
           />
           <TextField
             id="standard-textarea"
-            label="Email"
+            label="No_Of_Passanger"
             multiline
             variant="standard"
           />
           <TextField
             id="standard-textarea"
-            label="Email"
+            label="Daily_Rate"
             multiline
             variant="standard"
           />
           <TextField
             id="standard-textarea"
-            label="Email"
+            label="Monthly_Rate"
             multiline
             variant="standard"
           />
           <TextField
             id="standard-textarea"
-            label="Email"
+            label="Price_Extra_KM"
             multiline
             variant="standard"
           />
           <TextField
             id="standard-textarea"
-            label="Email"
+            label="Damage_Price"
             multiline
             variant="standard"
           />
@@ -111,7 +116,8 @@ const Cars = () => {
         {/* End button content */}
   
         {/* Start table content */}
-  
+
+    
       </Box>
     )
 };
