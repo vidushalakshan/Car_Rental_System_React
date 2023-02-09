@@ -33,6 +33,7 @@ import Admin from "./Admin";
 import Driver from "./Driver";
 import Cars from "./Cars";
 import Customer from "./Customer";
+import Payment from "./Payment";
 
 
 const Search = styled("div")(({ theme }) => ({
@@ -461,6 +462,18 @@ const DashBoard = () => {
             <Item>
               <div id="customer">
                <Customer/>
+                </div>
+            </Item>
+          </Grid>
+        </Grid>
+
+        {/* Payment content */}
+
+        <Grid container spacing={2}>
+          <Grid item xs={8}>
+            <Item>
+              <div id="payment">
+               <Payment/>
                 </div>
             </Item>
           </Grid>

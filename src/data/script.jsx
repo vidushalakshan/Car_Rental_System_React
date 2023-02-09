@@ -4,6 +4,7 @@ $("#admin").css("display", "none");
 $("#driver").css("display", "none");
 $("#cars").css("display", "none");
 $("#customer").css("display", "none");
+$("#payment").css("display", "none");
 
 $("#adminLink").click(function () {
   $("#dash").css("display", "none");
@@ -11,6 +12,7 @@ $("#adminLink").click(function () {
   $("#driver").css("display", "none");
   $("#cars").css("display", "none");
   $("#customer").css("display", "none");
+  $("#payment").css("display", "none");
 });
 
 $("#dashLink").click(function () {
@@ -19,6 +21,7 @@ $("#dashLink").click(function () {
   $("#driver").css("display", "none");
   $("#cars").css("display", "none");
   $("#customer").css("display", "none");
+  $("#payment").css("display", "none");
 });
 
 $("#driverLink").click(function () {
@@ -27,6 +30,7 @@ $("#driverLink").click(function () {
   $("#driver").css("display", "block");
   $("#cars").css("display", "none");
   $("#customer").css("display", "none");
+  $("#payment").css("display", "none");
 });
 
 $("#carLink").click(function () {
@@ -35,6 +39,7 @@ $("#carLink").click(function () {
   $("#driver").css("display", "none");
   $("#cars").css("display", "block");
   $("#customer").css("display", "none");
+  $("#payment").css("display", "none");
 });
 
 $("#customerLink").click(function() {
@@ -43,6 +48,16 @@ $("#customerLink").click(function() {
   $("#driver").css("display", "none");
   $("#cars").css("display", "none");
   $("#customer").css("display", "block");
+  $("#payment").css("display", "none");
+});
+
+$("#paymentLink").click(function () {
+  $("#dash").css("display", "none");
+  $("#admin").css("display", "none");
+  $("#driver").css("display", "none");
+  $("#cars").css("display", "none");
+  $("#customer").css("display", "none");
+  $("#payment").css("display", "block");
 });
 
 
