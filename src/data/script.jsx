@@ -5,6 +5,7 @@ $("#driver").css("display", "none");
 $("#cars").css("display", "none");
 $("#customer").css("display", "none");
 $("#payment").css("display", "none");
+$("#booking").css("display", "none");
 
 $("#adminLink").click(function () {
   $("#dash").css("display", "none");
@@ -13,6 +14,7 @@ $("#adminLink").click(function () {
   $("#cars").css("display", "none");
   $("#customer").css("display", "none");
   $("#payment").css("display", "none");
+  $("#booking").css("display", "none");
 });
 
 $("#dashLink").click(function () {
@@ -22,6 +24,7 @@ $("#dashLink").click(function () {
   $("#cars").css("display", "none");
   $("#customer").css("display", "none");
   $("#payment").css("display", "none");
+  $("#booking").css("display", "none");
 });
 
 $("#driverLink").click(function () {
@@ -31,6 +34,7 @@ $("#driverLink").click(function () {
   $("#cars").css("display", "none");
   $("#customer").css("display", "none");
   $("#payment").css("display", "none");
+  $("#booking").css("display", "none");
 });
 
 $("#carLink").click(function () {
@@ -40,6 +44,7 @@ $("#carLink").click(function () {
   $("#cars").css("display", "block");
   $("#customer").css("display", "none");
   $("#payment").css("display", "none");
+  $("#booking").css("display", "none");
 });
 
 $("#customerLink").click(function() {
@@ -49,6 +54,7 @@ $("#customerLink").click(function() {
   $("#cars").css("display", "none");
   $("#customer").css("display", "block");
   $("#payment").css("display", "none");
+  $("#booking").css("display", "none");
 });
 
 $("#paymentLink").click(function () {
@@ -58,4 +64,16 @@ $("#paymentLink").click(function () {
   $("#cars").css("display", "none");
   $("#customer").css("display", "none");
   $("#payment").css("display", "block");
+  $("#booking").css("display", "none");
+});
+
+
+$("#bookingLink").click(function () {
+  $("#dash").css("display", "none");
+  $("#admin").css("display", "none");
+  $("#driver").css("display", "none");
+  $("#cars").css("display", "none");
+  $("#customer").css("display", "none");
+  $("#payment").css("display", "none");
+  $("#booking").css("display", "block");
 });
