@@ -1,6 +1,6 @@
 import $ from "jquery";
 
-$("#admin").css("display", "none");
+$("#dash").css("display", "none");
 $("#driver").css("display", "none");
 $("#cars").css("display", "none");
 $("#customer").css("display", "none");
@@ -59,5 +59,3 @@ $("#paymentLink").click(function () {
   $("#customer").css("display", "none");
   $("#payment").css("display", "block");
 });
-
-
