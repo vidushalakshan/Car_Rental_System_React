@@ -32,6 +32,7 @@ import "../data/script";
 import Admin from "./Admin";
 import Driver from "./Driver";
 import Cars from "./Cars";
+import Customer from "./Customer";
 
 
 const Search = styled("div")(({ theme }) => ({
@@ -452,6 +453,19 @@ const DashBoard = () => {
             </Item>
           </Grid>
         </Grid>
+
+        {/* Customer content */}
+
+        <Grid container spacing={2}>
+          <Grid item xs={8}>
+            <Item>
+              <div id="customer">
+               <Customer/>
+                </div>
+            </Item>
+          </Grid>
+        </Grid>
+
       </Grid>
     </Box>
   );
