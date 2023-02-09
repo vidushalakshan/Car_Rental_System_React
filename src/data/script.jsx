@@ -1,6 +1,6 @@
 import $ from "jquery";
 
-$("#dash").css("display", "none");
+$("#admin").css("display", "none");
 $("#driver").css("display", "none");
 $("#cars").css("display", "none");
 
