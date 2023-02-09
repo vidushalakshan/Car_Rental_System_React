@@ -113,7 +113,7 @@ const Driver = () => {
       {/* End button content */}
 
       {/* Start table content */}
-      <div className="table_content">
+      <div className="table_driver">
         <TableContainer component={Paper}>
           <Table sx={{ minWidth: 1150 }} aria-label="simple table">
             <TableHead>

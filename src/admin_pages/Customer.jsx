@@ -38,16 +38,16 @@ const rows = [
 const Customer = () => {
     return (
         <>
-        <div className="table_content">
+        <div className="table_customer">
         <TableContainer component={Paper}>
           <Table sx={{ minWidth: 1150 }} aria-label="simple table">
             <TableHead>
               <TableRow>
-                <TableCell>Admin_ID</TableCell>
-                <TableCell align="right">Full_Name</TableCell>
-                <TableCell align="right">Address</TableCell>
-                <TableCell align="right">Mobile_Number</TableCell>
-                <TableCell align="right">Password</TableCell>
+                <TableCell> Customer_Id</TableCell>
+                <TableCell align="right">Name</TableCell>
+                <TableCell align="right">Nic_Name</TableCell>
+                <TableCell align="right"> Address</TableCell>
+                <TableCell align="right"> Mobile_Number</TableCell>
                 <TableCell align="right">Email</TableCell>
               </TableRow>
             </TableHead>
