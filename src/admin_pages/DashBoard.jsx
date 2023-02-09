@@ -34,6 +34,7 @@ import Driver from "./Driver";
 import Cars from "./Cars";
 import Customer from "./Customer";
 import Payment from "./Payment";
+import Booking from "./Booking";
 
 
 const Search = styled("div")(({ theme }) => ({
@@ -474,6 +475,18 @@ const DashBoard = () => {
             <Item>
               <div id="payment">
                <Payment/>
+                </div>
+            </Item>
+          </Grid>
+        </Grid>
+
+        {/* booking content */}
+
+        <Grid container spacing={2}>
+          <Grid item xs={8}>
+            <Item>
+              <div id="booking">
+               <Booking/>
                 </div>
             </Item>
           </Grid>
