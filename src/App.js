@@ -11,12 +11,11 @@ import DashBoard from "./admin_pages/DashBoard";
 function App() {
   return (
     <div>
-      {/* <Header/>
+      <Header/>
       <Home/>
       <AboutUs/>
       <HotOffers/>
-      <Contact/> */}
-      <DashBoard/>
+      <Contact/>
     </div>
   );
 }
