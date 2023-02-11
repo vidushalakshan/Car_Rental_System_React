@@ -14,5 +14,18 @@
 
 .payment_info {
     position: relative;
-    top: 56%;
+    top: 6%;
+}
+
+.info {
+    text-align: center;
+}
+
+.title_info {
+    color: blue;
+    font-weight: bold;
+}
+
+.details {
+    color: dimgray;
 }

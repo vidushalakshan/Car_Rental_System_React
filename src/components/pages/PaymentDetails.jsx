@@ -8,6 +8,7 @@ import "../../styles/payment.css";
 import DatePicker from "react-date-picker";
 import TimePicker from "react-time-picker";
 import Contact from "../common/contact/Contact";
+import { color } from "@mui/system";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -40,7 +41,7 @@ const PaymentDetails = () => {
               ></img>
             </div>
             <Item className="customer_content">
-                <h2>Booking Information</h2>
+              <h2>Booking Information</h2>
               <TextField
                 id="standard-textarea"
                 label="Full_Name"
@@ -70,10 +71,21 @@ const PaymentDetails = () => {
               </div>
             </Item>
           </Grid>
+
           <Grid item xs={6}>
-          <Item className="payment_info">
-          <h2>Payment Information</h2>
-          <TextField
+            <div className="info">
+                <h2 className="title_info">Great choice
+                </h2>
+                <h4 className="details">*Additional driver include (worth $60)</h4>
+                <h4 className="details">*Most popular fuel policy</h4>
+                <h4 className="details">*Easy to find counter</h4>
+                <h4 className="details">*Customer rating: 8.9 / 10</h4>
+                <h4 className="details">*Short lines(worth $60)</h4>
+                <h4 className="details">*Free Cancellation(worth $60)</h4>
+            </div>
+            <Item className="payment_info">
+              <h2>Payment Information</h2>
+              <TextField
                 id="standard-textarea"
                 label="Card_Number"
                 multiline
@@ -91,20 +103,20 @@ const PaymentDetails = () => {
                 multiline
                 variant="standard"
               />
-               <div>
+              <div>
                 <DatePicker
                   onChange={onChange}
                   value={value}
                   className="date"
                 />
               </div>
-          </Item>
-        </Grid>
-        <Grid item xs={12}>
+            </Item>
+          </Grid>
+          <Grid item xs={12}>
             <item>
-                <Contact/>
+              <Contact />
             </item>
-        </Grid>
+          </Grid>
         </Grid>
       </Box>
     </>
