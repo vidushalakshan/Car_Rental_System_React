@@ -1,13 +1,18 @@
 .customer_content {
     position: relative;
-    top: 145%;
+    top: 7%;
 }
 
 .date {
-    width: 250px;
+    width: 270px;
 }
 
 .time {
     position: relative;
     top: 10px;
+}
+
+.payment_info {
+    position: relative;
+    top: 56%;
 }
