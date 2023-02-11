@@ -12,12 +12,11 @@ import PaymentDetails from "./components/pages/PaymentDetails";
 function App() {
   return (
     <div>
-      {/* <Header/>
+      <Header/>
       <Home/>
       <AboutUs/>
       <HotOffers/>
-      <Contact/> */}
-      <PaymentDetails/>
+      <Contact/>
     </div>
   );
 }

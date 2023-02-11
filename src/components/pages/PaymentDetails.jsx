@@ -8,14 +8,11 @@ import "../../styles/payment.css";
 import DatePicker from "react-date-picker";
 import TimePicker from "react-time-picker";
 import Contact from "../common/contact/Contact";
-import { color } from "@mui/system";
-import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 import Radio from "@mui/material/Radio";
 import RadioGroup from "@mui/material/RadioGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import FormControl from "@mui/material/FormControl";
-import FormLabel from "@mui/material/FormLabel";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -144,7 +141,7 @@ const PaymentDetails = () => {
               <Button
                       variant="contained"
                       color="success"
-                      className="btn1"
+                      className="pay"
                     >
                       Pay & Booking
                     </Button>
