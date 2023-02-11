@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from 'react';
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import { styled } from "@mui/material/styles";
-import "../../styles/payment.css"
+import "../../styles/payment.css";
+import DatePicker from 'react-date-picker';
+import TimePicker from 'react-time-picker';
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -15,6 +17,9 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 const PaymentDetails = () => {
+    const [valu, onChang] = useState('10:00');
+    const [value, onChange] = useState(new Date());
+
   return (
     <>
       <Box
@@ -52,12 +57,12 @@ const PaymentDetails = () => {
                 multiline
                 variant="standard"
               />
-              <TextField
-                id="standard-textarea"
-                label="Email"
-                multiline
-                variant="standard"
-              />
+              <div>
+              <DatePicker onChange={onChange} value={value} className="date"/>
+              </div>
+              <div className='time'>
+              <TimePicker onChang={onChange} valu={value} className="date"/>
+                </div>
             </Item>
           </Grid>
         </Grid>

@@ -2,3 +2,12 @@
     position: relative;
     top: 145%;
 }
+
+.date {
+    width: 250px;
+}
+
+.time {
+    position: relative;
+    top: 10px;
+}
