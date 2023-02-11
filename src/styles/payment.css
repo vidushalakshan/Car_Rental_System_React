@@ -31,5 +31,12 @@
 
 .redio {
   position: relative;
-  left: -35%;
+  left: -20%;
+}
+
+.btn1 {
+    position: relative;
+    left: 17%;
+    top: 58px;
+    width: 20%;
 }

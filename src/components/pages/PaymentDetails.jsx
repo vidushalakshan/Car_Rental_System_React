@@ -141,6 +141,13 @@ const PaymentDetails = () => {
                   />
                 </RadioGroup>
               </FormControl>
+              <Button
+                      variant="contained"
+                      color="success"
+                      className="btn1"
+                    >
+                      Pay & Booking
+                    </Button>
             </Item>
           </Grid>
           <Grid item xs={12}>
