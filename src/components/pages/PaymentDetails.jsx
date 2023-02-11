@@ -7,6 +7,7 @@ import { styled } from "@mui/material/styles";
 import "../../styles/payment.css";
 import DatePicker from "react-date-picker";
 import TimePicker from "react-time-picker";
+import Contact from "../common/contact/Contact";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -98,6 +99,11 @@ const PaymentDetails = () => {
                 />
               </div>
           </Item>
+        </Grid>
+        <Grid item xs={12}>
+            <item>
+                <Contact/>
+            </item>
         </Grid>
         </Grid>
       </Box>
