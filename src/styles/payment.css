@@ -1,31 +1,35 @@
 .customer_content {
-    position: relative;
-    top: 7%;
+  position: relative;
+  top: 7%;
 }
 
 .date {
-    width: 270px;
+  width: 270px;
 }
 
 .time {
-    position: relative;
-    top: 10px;
+  position: relative;
+  top: 10px;
 }
 
 .payment_info {
-    position: relative;
-    top: 6%;
+  position: relative;
 }
 
 .info {
-    text-align: center;
+  text-align: center;
 }
 
 .title_info {
-    color: blue;
-    font-weight: bold;
+  color: blue;
+  font-weight: bold;
 }
 
 .details {
-    color: dimgray;
+  color: dimgray;
+}
+
+.redio {
+  position: relative;
+  left: -35%;
 }
