@@ -54,12 +54,14 @@ const HotOffers = () => {
                 </div>
                 <Stack direction="row">
                   <div className="stack">
-                    <Link to="/PaymentDetails">
+                   
+                      <Link to="/payment">
                       <Button variant="contained" className="btn1">
                         Rent
                       </Button>
-                    </Link>
-                    <Link to="/PaymentDetails">
+                      </Link>
+                   
+          
                     <Button
                       variant="contained"
                       color="success"
@@ -67,7 +69,7 @@ const HotOffers = () => {
                     >
                       Details
                     </Button>
-                    </Link>
+                    
                   </div>
                 </Stack>
               </div>
