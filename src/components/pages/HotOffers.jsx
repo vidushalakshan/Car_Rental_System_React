@@ -7,7 +7,7 @@ import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 import ReactDOM from "react-dom";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch, useHistory } from "react-router-dom";
 import Link from "@mui/material/Link";
 
 import PaymentDetails from "./PaymentDetails";
@@ -21,6 +21,10 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 const HotOffers = () => {
+
+    const history=useHistory();
+    const navigateTo = () => history.push("/payment");
+
   return (
     <div>
       <div>
@@ -55,11 +59,13 @@ const HotOffers = () => {
                 <Stack direction="row">
                   <div className="stack">
                    
-                      <Link to="/payment">
-                      <Button variant="contained" className="btn1">
+                      
+                      <Button 
+                       variant="contained" className="btn1"
+                      onClick={navigateTo}>
                         Rent
                       </Button>
-                      </Link>
+                      
                    
           
                     <Button
