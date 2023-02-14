@@ -18,7 +18,7 @@ const AboutUs  = () => {
     
     return (
         
-        <div>
+        <div title="About">
             <Font family='Viga'>
             <h1 className="topic">About Us</h1>
             </Font>

@@ -18,7 +18,13 @@ export const MenuData =[
     icon : "fa-solid fa-car"
 },
 {
-    title :"Users",
+    title :"Admin",
+    url : "#",
+    cName : "nav-links",
+    icon : "fa-solid fa-user"
+},
+{
+    title :"Drivers",
     url : "#",
     cName : "nav-links",
     icon : "fa-solid fa-user"

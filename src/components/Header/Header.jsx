@@ -6,6 +6,30 @@ import { styled, alpha } from "@mui/material/styles";
 import InputBase from "@mui/material/InputBase";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
+import { NavLink } from "react-router-dom";
+
+const navLinks =[
+  {
+    path : "/home",
+    display:"Home",
+  },
+
+  {
+    path : "/aboutus",
+    display : "About"
+  },
+
+  {
+    path : "/contact",
+    display:"Contact",
+  },
+
+  {
+    path : "/cars",
+    display : "Cars",
+  }
+
+]
 
 
 function Header() {

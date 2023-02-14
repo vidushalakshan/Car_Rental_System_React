@@ -6,9 +6,7 @@ import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
-import ReactDOM from "react-dom";
 import { BrowserRouter, Route, Switch, useHistory } from "react-router-dom";
-import Link from "@mui/material/Link";
 
 import PaymentDetails from "./PaymentDetails";
 
@@ -26,7 +24,7 @@ const HotOffers = () => {
     const navigateTo = () => history.push("/payment");
 
   return (
-    <div>
+    <div title="Cars">
       <div>
         <h3 className="smTitle">Come with</h3>
         <h1 className="bigTitle">Hot Offers</h1>

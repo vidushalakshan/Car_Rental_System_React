@@ -18,6 +18,7 @@ const Home = () => {
         pauseOnHover: false,
       };
     return (
+      <div title="Home">
         <Slider {...settings} className="hero__slider homeContent">
           <div className="slider__item slider__item-01 mt0">
            <Container>
@@ -35,6 +36,7 @@ const Home = () => {
            </Container>
           </div>
       </Slider>  
+      </div>
     );
 
 };
