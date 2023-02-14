@@ -72,6 +72,7 @@ const HotOffers = () => {
                       variant="contained"
                       color="success"
                       className="btn1"
+                      onClick={navigateTo}
                     >
                       Details
                     </Button>
@@ -105,13 +106,14 @@ const HotOffers = () => {
                 </div>
                 <Stack direction="row">
                   <div className="stack">
-                    <Button variant="contained" className="btn1">
+                    <Button variant="contained" className="btn1" onClick={navigateTo}>
                       Rent
                     </Button>
                     <Button
                       variant="contained"
                       color="success"
                       className="btn1"
+                      onClick={navigateTo}
                     >
                       Details
                     </Button>
@@ -143,13 +145,14 @@ const HotOffers = () => {
                 </div>
                 <Stack direction="row">
                   <div className="stack">
-                    <Button variant="contained" className="btn1">
+                    <Button variant="contained" className="btn1" onClick={navigateTo}>
                       Rent
                     </Button>
                     <Button
                       variant="contained"
                       color="success"
                       className="btn1"
+                      onClick={navigateTo}
                     >
                       Details
                     </Button>
@@ -187,13 +190,14 @@ const HotOffers = () => {
                 </div>
                 <Stack direction="row">
                   <div className="stack">
-                    <Button variant="contained" className="btn1">
+                    <Button variant="contained" className="btn1" onClick={navigateTo}>
                       Rent
                     </Button>
                     <Button
                       variant="contained"
                       color="success"
                       className="btn1"
+                      onClick={navigateTo}
                     >
                       Details
                     </Button>
@@ -226,13 +230,14 @@ const HotOffers = () => {
                 </div>
                 <Stack direction="row">
                   <div className="stack">
-                    <Button variant="contained" className="btn1">
+                    <Button variant="contained" className="btn1" onClick={navigateTo}>
                       Rent
                     </Button>
                     <Button
                       variant="contained"
                       color="success"
                       className="btn1"
+                      onClick={navigateTo}
                     >
                       Details
                     </Button>
@@ -264,13 +269,14 @@ const HotOffers = () => {
                 </div>
                 <Stack direction="row">
                   <div className="stack">
-                    <Button variant="contained" className="btn1">
+                    <Button variant="contained" className="btn1" onClick={navigateTo}>
                       Rent
                     </Button>
                     <Button
                       variant="contained"
                       color="success"
                       className="btn1"
+                      onClick={navigateTo}
                     >
                       Details
                     </Button>
