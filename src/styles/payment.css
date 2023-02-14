@@ -40,3 +40,8 @@
     top: 58px;
     width: 20%;
 }
+
+.down {
+  position: relative;
+  top: 79px;
+}

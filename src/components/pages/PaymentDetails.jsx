@@ -13,6 +13,7 @@ import Radio from "@mui/material/Radio";
 import RadioGroup from "@mui/material/RadioGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import FormControl from "@mui/material/FormControl";
+import Header from "../Header/Header";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -28,6 +29,8 @@ const PaymentDetails = () => {
 
   return (
     <>
+      <Header/>
+      <div className="down">
       <Box
         component="form"
         sx={{
@@ -154,6 +157,7 @@ const PaymentDetails = () => {
           </Grid>
         </Grid>
       </Box>
+      </div>
     </>
   );
 };
