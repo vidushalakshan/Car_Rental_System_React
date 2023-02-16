@@ -195,7 +195,7 @@ const DashBoard = () => {
             <div className="dash_page">
               <FlutterDashRoundedIcon className="dashIcon"></FlutterDashRoundedIcon>
               <h2 className="admin_dashboard">Admin Dashboard</h2>
-              <hr></hr>
+              <hr></hr>+
               <div className="page_link">
                 <ul className="dash_btn">
                   <li className="page" id="dashLink">

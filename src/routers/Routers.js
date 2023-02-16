@@ -6,6 +6,7 @@ import { Redirect, Route, Switch } from "react-router-dom";
 import RoutersTwo from "./RoutersTwo";
 import PaymentDetails from "../components/pages/PaymentDetails";
 import Layout from "../components/Layout/Layout";
+import LogingForm from "../components/pages/LogingForm";
 
 const Routers = () => {
   return (
@@ -27,6 +28,9 @@ const Routers = () => {
       </Route>
       <Route path="/payment">
         <PaymentDetails />
+      </Route>
+      <Route path="/loging">
+        <LogingForm/>
       </Route>
     </div>
   );

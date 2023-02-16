@@ -6,7 +6,7 @@ import { styled, alpha } from "@mui/material/styles";
 import InputBase from "@mui/material/InputBase";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
-import { NavLink } from "react-router-dom";
+import { NavLink, useHistory } from "react-router-dom";
 
 const navLinks =[
   {
@@ -33,6 +33,10 @@ const navLinks =[
 
 
 function Header() {
+
+      const history = useHistory();
+      const navigateTo= () => history.push("loging");
+
   // state = {clicked:false}
   return (
     <nav className="NavbarItems">
@@ -58,7 +62,9 @@ function Header() {
 
       <div className="login_btn">
         <Stack direction="row" spacing={2}>
-          <Button variant="contained" color="success">
+          <Button variant="contained" color="success"
+           onClick={navigateTo}
+          >
             Loging
           </Button>
         </Stack>
