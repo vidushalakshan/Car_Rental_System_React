@@ -35,7 +35,7 @@ const LogingForm = () => {
          
          </Grid>
         <Grid item xs={5}>
-            <Item>
+            <Item className="loging_content">
           {/* Start textField content */}
 
           <div className="txtAdmin">
@@ -82,7 +82,7 @@ const LogingForm = () => {
           {/* Start button content */}
 
           <div className="btnAdmin">
-            <Stack direction="row" spacing={2}>
+            <Stack direction="row" spacing={18}>
               <Button variant="contained" component="label" color="success">
                 Your_Image
                 <input hidden accept="image/*" multiple type="file" />
