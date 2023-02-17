@@ -6,7 +6,7 @@ import { styled, alpha } from "@mui/material/styles";
 import InputBase from "@mui/material/InputBase";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
-import { NavLink, useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const navLinks =[
   {
@@ -39,7 +39,7 @@ const navLinks =[
 
 function Header() {
 
-      const history = useHistory();
+      const history = useNavigate();
       const navigateTo= () => history.push("loging");
 
   // state = {clicked:false}
