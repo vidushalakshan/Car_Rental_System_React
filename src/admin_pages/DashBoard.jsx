@@ -33,6 +33,9 @@ import Cars from "./Cars";
 import Customer from "./Customer";
 import Payment from "./Payment";
 import Booking from "./Booking";
+import SlideNavBar from "./SlideNavBar";
+
+
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -184,76 +187,7 @@ const DashBoard = () => {
     <div title="dashboard">
       <Box sx={{ flexGrow: 1 }}>
         <Grid container spacing={3}>
-          <Grid item xs={2.5} className="dash_fixed">
-            {/* start slide nav bar */}
-            <Item>
-              <div className="dash_page">
-                <FlutterDashRoundedIcon className="dashIcon"></FlutterDashRoundedIcon>
-                <h2 className="admin_dashboard">Admin Dashboard</h2>
-                <hr></hr>+
-                <div className="page_link">
-                  <ul className="dash_btn">
-                    <li className="page" id="dashLink">
-                      <h3 className="dashboard">
-                        <a href="#" className="link">
-                          <DashboardIcon className="icon_dash page_icon"></DashboardIcon>
-                          Dashboard
-                        </a>
-                      </h3>
-                    </li>
-                    <li className="page" id="adminLink">
-                      <h3 className="admin">
-                        <a href="#" className="link">
-                          <AdminPanelSettingsIcon className="admin_dash page_icon"></AdminPanelSettingsIcon>
-                          Admin
-                        </a>
-                      </h3>
-                    </li>
-                    <li className="page" id="driverLink">
-                      <h3 className="driver">
-                        <a href="#" className="link">
-                          <AirlineSeatReclineExtraIcon className="driver_dash page_icon"></AirlineSeatReclineExtraIcon>
-                          Drivers
-                        </a>
-                      </h3>
-                    </li>
-                    <li className="page" id="customerLink">
-                      <h3 className="customer">
-                        <a href="#" className="link">
-                          <AccountCircleIcon className="customer_dash page_icon"></AccountCircleIcon>
-                          Customers
-                        </a>
-                      </h3>
-                    </li>
-                    <li className="page" id="carLink">
-                      <h3 className="car">
-                        <a href="#" className="link">
-                          <CarRentalIcon className="car_dash page_icon"></CarRentalIcon>
-                          Cars
-                        </a>
-                      </h3>
-                    </li>
-                    <li className="page" id="bookingLink">
-                      <h3 className="booking">
-                        <a href="#" className="link">
-                          <LibraryBooksIcon className="booking_dash page_icon"></LibraryBooksIcon>
-                          Booking
-                        </a>
-                      </h3>
-                    </li>
-                    <li className="page" id="paymentLink">
-                      <h3 className="payment">
-                        <a href="#" className="link">
-                          <PaymentsIcon className="payment_dash page_icon"></PaymentsIcon>
-                          Payment
-                        </a>
-                      </h3>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </Item>
-          </Grid>
+         <SlideNavBar/>
 
           {/* end slide nav bar */}
 

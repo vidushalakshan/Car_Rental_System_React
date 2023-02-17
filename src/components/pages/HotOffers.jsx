@@ -8,7 +8,6 @@ import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 import { useNavigate } from "react-router-dom";
 
-import PaymentDetails from "./PaymentDetails";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -20,7 +19,8 @@ const Item = styled(Paper)(({ theme }) => ({
 
 const HotOffers = () => {
 
-
+    const history=useNavigate();
+    const navigateTo = () => history.push();
 
   return (
     <div title="Cars">
@@ -59,7 +59,7 @@ const HotOffers = () => {
                       
                       <Button 
                        variant="contained" className="btn1"
-                     >
+                      onClick={navigateTo}>
                         Rent
                       </Button>
                       
@@ -69,7 +69,7 @@ const HotOffers = () => {
                       variant="contained"
                       color="success"
                       className="btn1"
-                    
+                      onClick={navigateTo}
                     >
                       Details
                     </Button>
@@ -103,14 +103,14 @@ const HotOffers = () => {
                 </div>
                 <Stack direction="row">
                   <div className="stack">
-                    <Button variant="contained" className="btn1" >
+                    <Button variant="contained" className="btn1" onClick={navigateTo}>
                       Rent
                     </Button>
                     <Button
                       variant="contained"
                       color="success"
                       className="btn1"
-                      
+                      onClick={navigateTo}
                     >
                       Details
                     </Button>
@@ -142,14 +142,14 @@ const HotOffers = () => {
                 </div>
                 <Stack direction="row">
                   <div className="stack">
-                    <Button variant="contained" className="btn1" >
+                    <Button variant="contained" className="btn1" onClick={navigateTo}>
                       Rent
                     </Button>
                     <Button
                       variant="contained"
                       color="success"
                       className="btn1"
-  
+                      onClick={navigateTo}
                     >
                       Details
                     </Button>
@@ -187,13 +187,14 @@ const HotOffers = () => {
                 </div>
                 <Stack direction="row">
                   <div className="stack">
-                    <Button variant="contained" className="btn1" >
+                    <Button variant="contained" className="btn1" onClick={navigateTo}>
                       Rent
                     </Button>
                     <Button
                       variant="contained"
                       color="success"
                       className="btn1"
+                      onClick={navigateTo}
                     >
                       Details
                     </Button>
@@ -226,14 +227,14 @@ const HotOffers = () => {
                 </div>
                 <Stack direction="row">
                   <div className="stack">
-                    <Button variant="contained" className="btn1" >
+                    <Button variant="contained" className="btn1" onClick={navigateTo}>
                       Rent
                     </Button>
                     <Button
                       variant="contained"
                       color="success"
                       className="btn1"
-                      
+                      onClick={navigateTo}
                     >
                       Details
                     </Button>
@@ -265,14 +266,14 @@ const HotOffers = () => {
                 </div>
                 <Stack direction="row">
                   <div className="stack">
-                    <Button variant="contained" className="btn1">
+                    <Button variant="contained" className="btn1" onClick={navigateTo}>
                       Rent
                     </Button>
                     <Button
                       variant="contained"
                       color="success"
                       className="btn1"
-                      
+                      onClick={navigateTo}
                     >
                       Details
                     </Button>

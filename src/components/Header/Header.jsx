@@ -40,7 +40,7 @@ const navLinks =[
 function Header() {
 
       const history = useNavigate();
-      const navigateTo= () => history.push("loging");
+      // const navigateTo= () => history.push("loging");
 
   // state = {clicked:false}
   return (
@@ -68,7 +68,6 @@ function Header() {
       <div className="login_btn">
         <Stack direction="row" spacing={2}>
           <Button variant="contained" color="success"
-           onClick={navigateTo}
           >
             Loging
           </Button>
