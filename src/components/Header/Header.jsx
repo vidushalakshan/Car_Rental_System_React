@@ -21,12 +21,17 @@ const navLinks =[
 
   {
     path : "/contact",
-    display:"Contact",
+    display:"Contacts",
   },
 
   {
     path : "/cars",
     display : "Cars",
+  },
+
+  {
+    path : "/dashboard",
+    display : "dashboard"
   }
 
 ]

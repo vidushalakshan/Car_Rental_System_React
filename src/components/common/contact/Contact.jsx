@@ -36,7 +36,7 @@ const Contact = () => {
   const date = new Date();
   const year = date.getFullYear();
   return (
-    <div title="Contact">
+    <div title="Contacts">
     <footer className="footer">
       <Container>
         <Row>

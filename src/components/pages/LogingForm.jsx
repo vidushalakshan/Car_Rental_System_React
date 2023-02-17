@@ -28,74 +28,71 @@ const LogingForm = () => {
         }}
         noValidate
         autoComplete="off"
-        
       >
         <Grid container spacing={12}>
-        <Grid item xs={3.5}>
-         
-         </Grid>
-        <Grid item xs={5}>
+          <Grid item xs={3.5}></Grid>
+          <Grid item xs={5}>
             <Item className="loging_content">
-          {/* Start textField content */}
+              {/* Start textField content */}
 
-          <div className="txtAdmin">
-            <TextField
-              id="standard-textarea"
-              label="Customer_ID"
-              multiline
-              variant="standard"
-            />
-            <TextField
-              id="standard-textarea"
-              label="Full_Name"
-              multiline
-              variant="standard"
-            />
-            <TextField
-              id="standard-textarea"
-              label="Nic_No"
-              multiline
-              variant="standard"
-            />
-            <TextField
-              id="standard-textarea"
-              label="Address"
-              multiline
-              variant="standard"
-            />
-            <TextField
-              id="standard-textarea"
-              label="Mobile_Number"
-              multiline
-              variant="standard"
-            />
-            <TextField
-              id="standard-textarea"
-              label="Email"
-              multiline
-              variant="standard"
-            />
-          </div>
+              <div>
+                <TextField
+                  id="standard-textarea"
+                  label="Customer_ID"
+                  multiline
+                  variant="standard"
+                />
+                <TextField
+                  id="standard-textarea"
+                  label="Full_Name"
+                  multiline
+                  variant="standard"
+                />
+                <TextField
+                  id="standard-textarea"
+                  label="Nic_No"
+                  multiline
+                  variant="standard"
+                />
+                <TextField
+                  id="standard-textarea"
+                  label="Address"
+                  multiline
+                  variant="standard"
+                />
+                <TextField
+                  id="standard-textarea"
+                  label="Mobile_Number"
+                  multiline
+                  variant="standard"
+                />
+                <TextField
+                  id="standard-textarea"
+                  label="Email"
+                  multiline
+                  variant="standard"
+                />
+              </div>
 
-          {/* End textField content */}
+              {/* End textField content */}
 
-          {/* Start button content */}
+              {/* Start button content */}
 
-          <div className="btnAdmin">
-            <Stack direction="row" spacing={18}>
-              <Button variant="contained" component="label" color="success">
-                Your_Image
-                <input hidden accept="image/*" multiple type="file" />
-              </Button>
-              <Button variant="contained" color="primary">
-                Save
-              </Button>
-              <Button variant="contained" color="secondary">
-                Clear
-              </Button>
-            </Stack>
-          </div>
-          </Item>
+              <div>
+                <Stack direction="row" spacing={18}>
+                  <Button variant="contained" component="label" color="success">
+                    Your_Image
+                    <input hidden accept="image/*" multiple type="file" />
+                  </Button>
+                  <Button variant="contained" color="primary">
+                    Loging
+                  </Button>
+                  <Button variant="contained" color="secondary">
+                    Clear
+                  </Button>
+                </Stack>
+              </div>
+            </Item>
           </Grid>
         </Grid>
       </Box>

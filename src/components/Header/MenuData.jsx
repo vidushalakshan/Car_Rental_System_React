@@ -21,7 +21,7 @@ export const MenuData =[
     title :"Admin",
     url : "#",
     cName : "nav-links",
-    icon : "fa-solid fa-user"
+    icon : "fa-solid fa-user",
 },
 {
     title :"Drivers",

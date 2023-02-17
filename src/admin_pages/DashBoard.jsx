@@ -19,7 +19,6 @@ import InputBase from "@mui/material/InputBase";
 import Badge from "@mui/material/Badge";
 import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
-
 import SearchIcon from "@mui/icons-material/Search";
 import AccountCircle from "@mui/icons-material/AccountCircle";
 import MailIcon from "@mui/icons-material/Mail";
@@ -27,7 +26,6 @@ import NotificationsIcon from "@mui/icons-material/Notifications";
 import MoreIcon from "@mui/icons-material/MoreVert";
 import * as React from "react";
 import TextField from "@mui/material/TextField";
-
 import "../data/script";
 import Admin from "./Admin";
 import Driver from "./Driver";
@@ -35,7 +33,6 @@ import Cars from "./Cars";
 import Customer from "./Customer";
 import Payment from "./Payment";
 import Booking from "./Booking";
-
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -183,317 +180,315 @@ const DashBoard = () => {
     </Menu>
   );
 
-
   return (
-
-    <Box sx={{ flexGrow: 1 }}>
-      <Grid container spacing={3}>
-        <Grid item xs={2.5} className="dash_fixed">
-
-          {/* start slide nav bar */}
-          <Item>
-            <div className="dash_page">
-              <FlutterDashRoundedIcon className="dashIcon"></FlutterDashRoundedIcon>
-              <h2 className="admin_dashboard">Admin Dashboard</h2>
-              <hr></hr>+
-              <div className="page_link">
-                <ul className="dash_btn">
-                  <li className="page" id="dashLink">
-                    <h3 className="dashboard">
-                      <a href="#" className="link">
-                        <DashboardIcon className="icon_dash page_icon"></DashboardIcon>
-                        Dashboard
-                      </a>
-                    </h3>
-                  </li>
-                  <li className="page" id="adminLink">
-                    <h3 className="admin">
-                      <a href="#" className="link">
-                        <AdminPanelSettingsIcon className="admin_dash page_icon"></AdminPanelSettingsIcon>
-                        Admin
-                      </a>
-                    </h3>
-                  </li>
-                  <li className="page" id="driverLink">
-                    <h3 className="driver">
-                      <a href="#" className="link">
-                        <AirlineSeatReclineExtraIcon className="driver_dash page_icon"></AirlineSeatReclineExtraIcon>
-                        Drivers
-                      </a>
-                    </h3>
-                  </li>
-                  <li className="page" id="customerLink">
-                    <h3 className="customer">
-                      <a href="#" className="link">
-                        <AccountCircleIcon className="customer_dash page_icon"></AccountCircleIcon>
-                        Customers
-                      </a>
-                    </h3>
-                  </li>
-                  <li className="page" id="carLink">
-                    <h3 className="car">
-                      <a href="#" className="link">
-                        <CarRentalIcon className="car_dash page_icon"></CarRentalIcon>
-                        Cars
-                      </a>
-                    </h3>
-                  </li>
-                  <li className="page" id="bookingLink">
-                    <h3 className="booking">
-                      <a href="#" className="link">
-                        <LibraryBooksIcon className="booking_dash page_icon"></LibraryBooksIcon>
-                        Booking
-                      </a>
-                    </h3>
-                  </li>
-                  <li className="page" id="paymentLink">
-                    <h3 className="payment">
-                      <a href="#" className="link">
-                        <PaymentsIcon className="payment_dash page_icon"></PaymentsIcon>
-                        Payment
-                      </a>
-                    </h3>
-                  </li>
-                </ul>
+    <div title="dashboard">
+      <Box sx={{ flexGrow: 1 }}>
+        <Grid container spacing={3}>
+          <Grid item xs={2.5} className="dash_fixed">
+            {/* start slide nav bar */}
+            <Item>
+              <div className="dash_page">
+                <FlutterDashRoundedIcon className="dashIcon"></FlutterDashRoundedIcon>
+                <h2 className="admin_dashboard">Admin Dashboard</h2>
+                <hr></hr>+
+                <div className="page_link">
+                  <ul className="dash_btn">
+                    <li className="page" id="dashLink">
+                      <h3 className="dashboard">
+                        <a href="#" className="link">
+                          <DashboardIcon className="icon_dash page_icon"></DashboardIcon>
+                          Dashboard
+                        </a>
+                      </h3>
+                    </li>
+                    <li className="page" id="adminLink">
+                      <h3 className="admin">
+                        <a href="#" className="link">
+                          <AdminPanelSettingsIcon className="admin_dash page_icon"></AdminPanelSettingsIcon>
+                          Admin
+                        </a>
+                      </h3>
+                    </li>
+                    <li className="page" id="driverLink">
+                      <h3 className="driver">
+                        <a href="#" className="link">
+                          <AirlineSeatReclineExtraIcon className="driver_dash page_icon"></AirlineSeatReclineExtraIcon>
+                          Drivers
+                        </a>
+                      </h3>
+                    </li>
+                    <li className="page" id="customerLink">
+                      <h3 className="customer">
+                        <a href="#" className="link">
+                          <AccountCircleIcon className="customer_dash page_icon"></AccountCircleIcon>
+                          Customers
+                        </a>
+                      </h3>
+                    </li>
+                    <li className="page" id="carLink">
+                      <h3 className="car">
+                        <a href="#" className="link">
+                          <CarRentalIcon className="car_dash page_icon"></CarRentalIcon>
+                          Cars
+                        </a>
+                      </h3>
+                    </li>
+                    <li className="page" id="bookingLink">
+                      <h3 className="booking">
+                        <a href="#" className="link">
+                          <LibraryBooksIcon className="booking_dash page_icon"></LibraryBooksIcon>
+                          Booking
+                        </a>
+                      </h3>
+                    </li>
+                    <li className="page" id="paymentLink">
+                      <h3 className="payment">
+                        <a href="#" className="link">
+                          <PaymentsIcon className="payment_dash page_icon"></PaymentsIcon>
+                          Payment
+                        </a>
+                      </h3>
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div>
-          </Item>
-        </Grid>
+            </Item>
+          </Grid>
 
-        {/* end slide nav bar */}
+          {/* end slide nav bar */}
 
-        {/* start top nav bar */}
+          {/* start top nav bar */}
 
-        <Grid item xs={9}>
-          <Item>
-            <Box sx={{ flexGrow: 1 }}>
-              <AppBar position="static">
-                <Toolbar>
-                  <Typography
-                    variant="h6"
-                    noWrap
-                    component="div"
-                    sx={{ display: { xs: "none", sm: "block" } }}
-                  >
-                    ADMIN
-                  </Typography>
-                  <Search>
-                    <SearchIconWrapper>
-                      <SearchIcon />
-                    </SearchIconWrapper>
-                    <StyledInputBase
-                      placeholder="Search…"
-                      inputProps={{ "aria-label": "search" }}
-                    />
-                  </Search>
-                  <Box sx={{ flexGrow: 1 }} />
-                  <Box sx={{ display: { xs: "none", md: "flex" } }}>
-                    <IconButton
-                      size="large"
-                      aria-label="show 4 new mails"
-                      color="inherit"
+          <Grid item xs={9}>
+            <Item>
+              <Box sx={{ flexGrow: 1 }}>
+                <AppBar position="static">
+                  <Toolbar>
+                    <Typography
+                      variant="h6"
+                      noWrap
+                      component="div"
+                      sx={{ display: { xs: "none", sm: "block" } }}
                     >
-                      <Badge badgeContent={4} color="error">
-                        <MailIcon />
-                      </Badge>
-                    </IconButton>
-                    <IconButton
-                      size="large"
-                      aria-label="show 17 new notifications"
-                      color="inherit"
-                    >
-                      <Badge badgeContent={17} color="error">
-                        <NotificationsIcon />
-                      </Badge>
-                    </IconButton>
-                    <IconButton
-                      size="large"
-                      edge="end"
-                      aria-label="account of current user"
-                      aria-controls={menuId}
-                      aria-haspopup="true"
-                      onClick={handleProfileMenuOpen}
-                      color="inherit"
-                    >
-                      <AccountCircle />
-                    </IconButton>
-                  </Box>
-                  <Box sx={{ display: { xs: "flex", md: "none" } }}>
-                    <IconButton
-                      size="large"
-                      aria-label="show more"
-                      aria-controls={mobileMenuId}
-                      aria-haspopup="true"
-                      onClick={handleMobileMenuOpen}
-                      color="inherit"
-                    >
-                      <MoreIcon />
-                    </IconButton>
-                  </Box>
-                </Toolbar>
-              </AppBar>
-              {renderMobileMenu}
-              {renderMenu}
-            </Box>
+                      ADMIN
+                    </Typography>
+                    <Search>
+                      <SearchIconWrapper>
+                        <SearchIcon />
+                      </SearchIconWrapper>
+                      <StyledInputBase
+                        placeholder="Search…"
+                        inputProps={{ "aria-label": "search" }}
+                      />
+                    </Search>
+                    <Box sx={{ flexGrow: 1 }} />
+                    <Box sx={{ display: { xs: "none", md: "flex" } }}>
+                      <IconButton
+                        size="large"
+                        aria-label="show 4 new mails"
+                        color="inherit"
+                      >
+                        <Badge badgeContent={4} color="error">
+                          <MailIcon />
+                        </Badge>
+                      </IconButton>
+                      <IconButton
+                        size="large"
+                        aria-label="show 17 new notifications"
+                        color="inherit"
+                      >
+                        <Badge badgeContent={17} color="error">
+                          <NotificationsIcon />
+                        </Badge>
+                      </IconButton>
+                      <IconButton
+                        size="large"
+                        edge="end"
+                        aria-label="account of current user"
+                        aria-controls={menuId}
+                        aria-haspopup="true"
+                        onClick={handleProfileMenuOpen}
+                        color="inherit"
+                      >
+                        <AccountCircle />
+                      </IconButton>
+                    </Box>
+                    <Box sx={{ display: { xs: "flex", md: "none" } }}>
+                      <IconButton
+                        size="large"
+                        aria-label="show more"
+                        aria-controls={mobileMenuId}
+                        aria-haspopup="true"
+                        onClick={handleMobileMenuOpen}
+                        color="inherit"
+                      >
+                        <MoreIcon />
+                      </IconButton>
+                    </Box>
+                  </Toolbar>
+                </AppBar>
+                {renderMobileMenu}
+                {renderMenu}
+              </Box>
 
-            {/* end top nav bar */}
+              {/* end top nav bar */}
 
-            {/* start dashboard content */}
+              {/* start dashboard content */}
 
-            <Grid item xs={12} className="grid" id="dash">
-              <Item className="card">
-                <div className="admin_card card_admin">
-                  <div className="admin_logo">
-                    <AdminPanelSettingsIcon className="admin_icon"></AdminPanelSettingsIcon>
+              <Grid item xs={12} className="grid" id="dash">
+                <Item className="card">
+                  <div className="admin_card card_admin">
+                    <div className="admin_logo">
+                      <AdminPanelSettingsIcon className="admin_icon"></AdminPanelSettingsIcon>
+                    </div>
+                    <hr className="hr"></hr>
+                    <div className="title_box">
+                      <h3>Admin</h3>
+                      <span>23</span>
+                    </div>
+                    <span className="text_driver">+55% than lask week</span>
                   </div>
-                  <hr className="hr"></hr>
-                  <div className="title_box">
-                    <h3>Admin</h3>
-                    <span>23</span>
-                  </div>
-                  <span className="text_driver">+55% than lask week</span>
-                </div>
 
-                <div className="admin_card card_driver">
-                  <div className="driver_logo">
-                    <AirlineSeatReclineExtraIcon className="driver_icon"></AirlineSeatReclineExtraIcon>
+                  <div className="admin_card card_driver">
+                    <div className="driver_logo">
+                      <AirlineSeatReclineExtraIcon className="driver_icon"></AirlineSeatReclineExtraIcon>
+                    </div>
+                    <hr className="hr"></hr>
+                    <div className="driver_box">
+                      <h3>Drivers</h3>
+                      <span>23</span>
+                    </div>
+                    <span className="text_driver">+55% than lask week</span>
                   </div>
-                  <hr className="hr"></hr>
-                  <div className="driver_box">
-                    <h3>Drivers</h3>
-                    <span>23</span>
-                  </div>
-                  <span className="text_driver">+55% than lask week</span>
-                </div>
 
-                <div className="admin_card card_cars">
-                  <div className="car_logo">
-                    <CarRentalIcon className="car_icon"></CarRentalIcon>
+                  <div className="admin_card card_cars">
+                    <div className="car_logo">
+                      <CarRentalIcon className="car_icon"></CarRentalIcon>
+                    </div>
+                    <hr className="hr"></hr>
+                    <div className="driver_box">
+                      <h3>Cars</h3>
+                      <span>30</span>
+                    </div>
+                    <span className="text_driver">+55% than lask week</span>
                   </div>
-                  <hr className="hr"></hr>
-                  <div className="driver_box">
-                    <h3>Cars</h3>
-                    <span>30</span>
-                  </div>
-                  <span className="text_driver">+55% than lask week</span>
-                </div>
 
-                <div className="admin_card card_customer">
-                  <div className="car_logo">
-                    <AccountCircleIcon className="customer_icon"></AccountCircleIcon>
+                  <div className="admin_card card_customer">
+                    <div className="car_logo">
+                      <AccountCircleIcon className="customer_icon"></AccountCircleIcon>
+                    </div>
+                    <hr className="hr"></hr>
+                    <div className="driver_box">
+                      <h3>Customers</h3>
+                      <span>53</span>
+                    </div>
+                    <span className="text_driver">+55% than lask week</span>
                   </div>
-                  <hr className="hr"></hr>
-                  <div className="driver_box">
-                    <h3>Customers</h3>
-                    <span>53</span>
-                  </div>
-                  <span className="text_driver">+55% than lask week</span>
-                </div>
 
-                <div className="admin_card card_booking">
-                  <div className="booking_logo">
-                    <LibraryBooksIcon className="booking_icon"></LibraryBooksIcon>
+                  <div className="admin_card card_booking">
+                    <div className="booking_logo">
+                      <LibraryBooksIcon className="booking_icon"></LibraryBooksIcon>
+                    </div>
+                    <hr className="hr"></hr>
+                    <div className="booking_details">
+                      <h3>Booking</h3>
+                      <span>53</span>
+                    </div>
+                    <span className="text_booking">+55% than lask week</span>
                   </div>
-                  <hr className="hr"></hr>
-                  <div className="booking_details">
-                    <h3>Booking</h3>
-                    <span>53</span>
-                  </div>
-                  <span className="text_booking">+55% than lask week</span>
-                </div>
 
-                <div className="admin_card card_payment">
-                  <div className="payment_logo">
-                    <PaymentsIcon className="customer_icon"></PaymentsIcon>
+                  <div className="admin_card card_payment">
+                    <div className="payment_logo">
+                      <PaymentsIcon className="customer_icon"></PaymentsIcon>
+                    </div>
+                    <hr className="hr"></hr>
+                    <div className="driver_box">
+                      <h3>Payment</h3>
+                      <span>53</span>
+                    </div>
+                    <span className="text_driver">+55% than lask week</span>
                   </div>
-                  <hr className="hr"></hr>
-                  <div className="driver_box">
-                    <h3>Payment</h3>
-                    <span>53</span>
-                  </div>
-                  <span className="text_driver">+55% than lask week</span>
+                </Item>
+              </Grid>
+
+              {/* end dashboard content */}
+            </Item>
+          </Grid>
+
+          {/* admin content */}
+
+          <Grid container spacing={2}>
+            <Grid item xs={8}>
+              <Item>
+                <div id="admin">
+                  <Admin />
                 </div>
               </Item>
             </Grid>
+          </Grid>
 
-            {/* end dashboard content */}
-          </Item>
-        </Grid>
+          {/* driver content */}
 
-        {/* admin content */}
-
-        <Grid container spacing={2}>
-          <Grid item xs={8}>
-            <Item>
-              <div id="admin">
-               <Admin/>
+          <Grid container spacing={2}>
+            <Grid item xs={8}>
+              <Item>
+                <div id="driver">
+                  <Driver />
                 </div>
-            </Item>
+              </Item>
+            </Grid>
+          </Grid>
+
+          {/* Cars content */}
+
+          <Grid container spacing={2}>
+            <Grid item xs={8}>
+              <Item>
+                <div id="cars">
+                  <Cars />
+                </div>
+              </Item>
+            </Grid>
+          </Grid>
+
+          {/* Customer content */}
+
+          <Grid container spacing={2}>
+            <Grid item xs={8}>
+              <Item>
+                <div id="customer">
+                  <Customer />
+                </div>
+              </Item>
+            </Grid>
+          </Grid>
+
+          {/* Payment content */}
+
+          <Grid container spacing={2}>
+            <Grid item xs={8}>
+              <Item>
+                <div id="payment">
+                  <Payment />
+                </div>
+              </Item>
+            </Grid>
+          </Grid>
+
+          {/* booking content */}
+
+          <Grid container spacing={2}>
+            <Grid item xs={8}>
+              <Item>
+                <div id="booking">
+                  <Booking />
+                </div>
+              </Item>
+            </Grid>
           </Grid>
         </Grid>
-
-        {/* driver content */}
-
-        <Grid container spacing={2}>
-          <Grid item xs={8}>
-            <Item>
-              <div id="driver">
-               <Driver/>
-                </div>
-            </Item>
-          </Grid>
-        </Grid>
-
-        {/* Cars content */}
-
-        <Grid container spacing={2}>
-          <Grid item xs={8}>
-            <Item>
-              <div id="cars">
-               <Cars/>
-                </div>
-            </Item>
-          </Grid>
-        </Grid>
-
-        {/* Customer content */}
-
-        <Grid container spacing={2}>
-          <Grid item xs={8}>
-            <Item>
-              <div id="customer">
-               <Customer/>
-                </div>
-            </Item>
-          </Grid>
-        </Grid>
-
-        {/* Payment content */}
-
-        <Grid container spacing={2}>
-          <Grid item xs={8}>
-            <Item>
-              <div id="payment">
-               <Payment/>
-                </div>
-            </Item>
-          </Grid>
-        </Grid>
-
-        {/* booking content */}
-
-        <Grid container spacing={2}>
-          <Grid item xs={8}>
-            <Item>
-              <div id="booking">
-               <Booking/>
-                </div>
-            </Item>
-          </Grid>
-        </Grid>
-
-      </Grid>
-    </Box>
+      </Box>
+    </div>
   );
 };
 

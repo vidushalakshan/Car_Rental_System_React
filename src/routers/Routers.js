@@ -7,6 +7,7 @@ import RoutersTwo from "./RoutersTwo";
 import PaymentDetails from "../components/pages/PaymentDetails";
 import Layout from "../components/Layout/Layout";
 import LogingForm from "../components/pages/LogingForm";
+import DashBoard from "../admin_pages/DashBoard";
 
 const Routers = () => {
   return (
@@ -31,6 +32,9 @@ const Routers = () => {
       </Route>
       <Route path="/loging">
         <LogingForm/>
+      </Route>
+      <Route path="/dashboard">
+        <DashBoard/>
       </Route>
     </div>
   );
