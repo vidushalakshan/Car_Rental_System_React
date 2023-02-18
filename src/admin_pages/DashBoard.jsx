@@ -1,31 +1,23 @@
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import "../../src/styles/dashBoard.css";
-import DashboardIcon from "@mui/icons-material/Dashboard";
 import AdminPanelSettingsIcon from "@mui/icons-material/AdminPanelSettings";
 import AirlineSeatReclineExtraIcon from "@mui/icons-material/AirlineSeatReclineExtra";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import CarRentalIcon from "@mui/icons-material/CarRental";
 import LibraryBooksIcon from "@mui/icons-material/LibraryBooks";
 import PaymentsIcon from "@mui/icons-material/Payments";
-import FlutterDashRoundedIcon from "@mui/icons-material/FlutterDashRounded";
 import { styled, alpha } from "@mui/material/styles";
-import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
 import InputBase from "@mui/material/InputBase";
 import Badge from "@mui/material/Badge";
 import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
-import SearchIcon from "@mui/icons-material/Search";
 import AccountCircle from "@mui/icons-material/AccountCircle";
 import MailIcon from "@mui/icons-material/Mail";
 import NotificationsIcon from "@mui/icons-material/Notifications";
-import MoreIcon from "@mui/icons-material/MoreVert";
 import * as React from "react";
-import TextField from "@mui/material/TextField";
 import "../data/script";
 import Admin from "./Admin";
 import Driver from "./Driver";
@@ -285,7 +277,7 @@ const DashBoard = () => {
 
           {/* admin content */}
 
-          <Grid container spacing={2}>
+          {/* <Grid container spacing={2}>
             <Grid item xs={8}>
               <Item>
                 <div id="admin">
@@ -293,11 +285,11 @@ const DashBoard = () => {
                 </div>
               </Item>
             </Grid>
-          </Grid>
+          </Grid> */}
 
           {/* driver content */}
 
-          <Grid container spacing={2}>
+          {/* <Grid container spacing={2}>
             <Grid item xs={8}>
               <Item>
                 <div id="driver">
@@ -305,11 +297,11 @@ const DashBoard = () => {
                 </div>
               </Item>
             </Grid>
-          </Grid>
+          </Grid> */}
 
           {/* Cars content */}
 
-          <Grid container spacing={2}>
+          {/* <Grid container spacing={2}>
             <Grid item xs={8}>
               <Item>
                 <div id="cars">
@@ -317,11 +309,11 @@ const DashBoard = () => {
                 </div>
               </Item>
             </Grid>
-          </Grid>
+          </Grid> */}
 
           {/* Customer content */}
 
-          <Grid container spacing={2}>
+          {/* <Grid container spacing={2}>
             <Grid item xs={8}>
               <Item>
                 <div id="customer">
@@ -329,11 +321,11 @@ const DashBoard = () => {
                 </div>
               </Item>
             </Grid>
-          </Grid>
+          </Grid> */}
 
           {/* Payment content */}
 
-          <Grid container spacing={2}>
+          {/* <Grid container spacing={2}>
             <Grid item xs={8}>
               <Item>
                 <div id="payment">
@@ -341,11 +333,11 @@ const DashBoard = () => {
                 </div>
               </Item>
             </Grid>
-          </Grid>
+          </Grid> */}
 
           {/* booking content */}
 
-          <Grid container spacing={2}>
+          {/* <Grid container spacing={2}>
             <Grid item xs={8}>
               <Item>
                 <div id="booking">
@@ -353,7 +345,7 @@ const DashBoard = () => {
                 </div>
               </Item>
             </Grid>
-          </Grid>
+          </Grid> */}
         </Grid>
       </Box>
     </div>

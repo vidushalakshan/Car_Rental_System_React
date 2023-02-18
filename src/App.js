@@ -10,6 +10,7 @@ import Contact from "./components/common/contact/Contact";
 import LogingForm from "./components/pages/LogingForm";
 import DashBoard from "./admin_pages/DashBoard";
 import PaymentDetails from "./components/pages/PaymentDetails";
+import Admin from "./admin_pages/Admin";
 
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
       <Route path="/loging" element={<LogingForm/>} />
       <Route path="/dashboard" element={<DashBoard/>} />
       <Route path="/payment" element={<PaymentDetails/>} /> */}
-       <Route path="/" element={<DashBoard/>} />
+       <Route path="/" element={<Admin/>} />
    </Routes>
   )
 }
