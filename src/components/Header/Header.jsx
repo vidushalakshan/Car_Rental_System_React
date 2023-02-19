@@ -6,41 +6,38 @@ import { styled, alpha } from "@mui/material/styles";
 import InputBase from "@mui/material/InputBase";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
-const navLinks =[
+const navLinks = [
   {
-    path : "/home",
-    display:"Home",
+    path: "/home",
+    display: "Home",
   },
 
   {
-    path : "/aboutus",
-    display : "About"
+    path: "/aboutus",
+    display: "About",
   },
 
   {
-    path : "/contact",
-    display:"Contacts",
+    path: "/contact",
+    display: "Contacts",
   },
 
   {
-    path : "/cars",
-    display : "Cars",
+    path: "/cars",
+    display: "Cars",
   },
 
   {
-    path : "/dashboard",
-    display : "dashboard"
-  }
-
-]
-
+    path: "/dashboard",
+    display: "dashboard",
+  },
+];
 
 function Header() {
-
-      const history = useNavigate();
-      // const navigateTo= () => history.push("loging");
+  const history = useNavigate();
+  // const navigateTo= () => history.push("loging");
 
   // state = {clicked:false}
   return (
@@ -67,10 +64,11 @@ function Header() {
 
       <div className="login_btn">
         <Stack direction="row" spacing={2}>
-          <Button variant="contained" color="success"
-          >
-            Loging
-          </Button>
+          <Link to="/loging">
+            <Button variant="contained" color="success">
+              Loging
+            </Button>
+          </Link>
         </Stack>
       </div>
     </nav>
