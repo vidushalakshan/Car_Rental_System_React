@@ -6,8 +6,7 @@ import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
-import { useNavigate } from "react-router-dom";
-
+import { Link } from "react-router-dom";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -18,10 +17,6 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 const HotOffers = () => {
-
-    const history=useNavigate();
-    const navigateTo = () => history.push();
-
   return (
     <div title="Cars">
       <div>
@@ -55,25 +50,21 @@ const HotOffers = () => {
                 </div>
                 <Stack direction="row">
                   <div className="stack">
-                   
-                      
-                      <Button 
-                       variant="contained" className="btn1"
-                      onClick={navigateTo}>
+                    <Link to="/payment">
+                      <Button variant="contained" className="btn1">
                         Rent
                       </Button>
-                      
-                   
-          
-                    <Button
-                      variant="contained"
-                      color="success"
-                      className="btn1"
-                      onClick={navigateTo}
-                    >
-                      Details
-                    </Button>
-                    
+                    </Link>
+
+                    <Link to="/payment">
+                      <Button
+                        variant="contained"
+                        color="success"
+                        className="btn1"
+                      >
+                        Details
+                      </Button>
+                    </Link>
                   </div>
                 </Stack>
               </div>
@@ -103,17 +94,21 @@ const HotOffers = () => {
                 </div>
                 <Stack direction="row">
                   <div className="stack">
-                    <Button variant="contained" className="btn1" onClick={navigateTo}>
-                      Rent
-                    </Button>
-                    <Button
-                      variant="contained"
-                      color="success"
-                      className="btn1"
-                      onClick={navigateTo}
-                    >
-                      Details
-                    </Button>
+                    <Link to="/payment">
+                      <Button variant="contained" className="btn1">
+                        Rent
+                      </Button>
+                    </Link>
+
+                    <Link to="/payment">
+                      <Button
+                        variant="contained"
+                        color="success"
+                        className="btn1"
+                      >
+                        Details
+                      </Button>
+                    </Link>
                   </div>
                 </Stack>
               </div>
@@ -142,17 +137,21 @@ const HotOffers = () => {
                 </div>
                 <Stack direction="row">
                   <div className="stack">
-                    <Button variant="contained" className="btn1" onClick={navigateTo}>
-                      Rent
-                    </Button>
-                    <Button
-                      variant="contained"
-                      color="success"
-                      className="btn1"
-                      onClick={navigateTo}
-                    >
-                      Details
-                    </Button>
+                    <Link to="/payment">
+                      <Button variant="contained" className="btn1">
+                        Rent
+                      </Button>
+                    </Link>
+
+                    <Link to="/payment">
+                      <Button
+                        variant="contained"
+                        color="success"
+                        className="btn1"
+                      >
+                        Details
+                      </Button>
+                    </Link>
                   </div>
                 </Stack>
               </div>
@@ -187,17 +186,21 @@ const HotOffers = () => {
                 </div>
                 <Stack direction="row">
                   <div className="stack">
-                    <Button variant="contained" className="btn1" onClick={navigateTo}>
-                      Rent
-                    </Button>
-                    <Button
-                      variant="contained"
-                      color="success"
-                      className="btn1"
-                      onClick={navigateTo}
-                    >
-                      Details
-                    </Button>
+                    <Link to="/payment">
+                      <Button variant="contained" className="btn1">
+                        Rent
+                      </Button>
+                    </Link>
+
+                    <Link to="/payment">
+                      <Button
+                        variant="contained"
+                        color="success"
+                        className="btn1"
+                      >
+                        Details
+                      </Button>
+                    </Link>
                   </div>
                 </Stack>
               </div>
@@ -227,17 +230,21 @@ const HotOffers = () => {
                 </div>
                 <Stack direction="row">
                   <div className="stack">
-                    <Button variant="contained" className="btn1" onClick={navigateTo}>
-                      Rent
-                    </Button>
-                    <Button
-                      variant="contained"
-                      color="success"
-                      className="btn1"
-                      onClick={navigateTo}
-                    >
-                      Details
-                    </Button>
+                    <Link to="/payment">
+                      <Button variant="contained" className="btn1">
+                        Rent
+                      </Button>
+                    </Link>
+
+                    <Link to="/payment">
+                      <Button
+                        variant="contained"
+                        color="success"
+                        className="btn1"
+                      >
+                        Details
+                      </Button>
+                    </Link>
                   </div>
                 </Stack>
               </div>
@@ -266,17 +273,21 @@ const HotOffers = () => {
                 </div>
                 <Stack direction="row">
                   <div className="stack">
-                    <Button variant="contained" className="btn1" onClick={navigateTo}>
-                      Rent
-                    </Button>
-                    <Button
-                      variant="contained"
-                      color="success"
-                      className="btn1"
-                      onClick={navigateTo}
-                    >
-                      Details
-                    </Button>
+                    <Link to="/payment">
+                      <Button variant="contained" className="btn1">
+                        Rent
+                      </Button>
+                    </Link>
+
+                    <Link to="/payment">
+                      <Button
+                        variant="contained"
+                        color="success"
+                        className="btn1"
+                      >
+                        Details
+                      </Button>
+                    </Link>
                   </div>
                 </Stack>
               </div>
