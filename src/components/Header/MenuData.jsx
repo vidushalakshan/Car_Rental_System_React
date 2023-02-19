@@ -1,26 +1,26 @@
 export const MenuData =[
 {
     title :"Home",
-    url : "#",
+    path : "/home",
     cName : "nav-links",
     icon : "fa-solid fa-house-user",
    
 },
 {
     title :"About",
-    url : "#",
+    path : "/about",
     cName : "nav-links",
     icon : "fa-solid fa-circle-info"
 },
 {
     title :"Cars",
-    url : "#",
+    path : "hot_offers",
     cName : "nav-links",
     icon : "fa-solid fa-car"
 },
 {
     title :"Admin",
-    url : "#",
+    path : "dashboard",
     cName : "nav-links",
     icon : "fa-solid fa-user",
 },
@@ -32,7 +32,7 @@ export const MenuData =[
 },
 {
     title :"Contact",
-    url : "#",
+    path : "/contact",
     cName : "nav-links",
     icon : "fa-solid fa-address-book"
 },
