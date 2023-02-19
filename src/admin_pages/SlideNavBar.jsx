@@ -13,6 +13,7 @@ import FlutterDashRoundedIcon from "@mui/icons-material/FlutterDashRounded";
 import InputBase from "@mui/material/InputBase";
 import { styled, alpha } from "@mui/material/styles";
 import DashboardIcon from "@mui/icons-material/Dashboard";
+import { NavLink } from "react-router-dom";
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -78,58 +79,58 @@ const SlideNavBar = () => {
                   <ul className="dash_btn">
                     <li className="page" id="dashLink">
                       <h3 className="dashboard">
-                        <a href="#" className="link">
+                        <NavLink href="#" id="link" className="navbar-item" activeClassName="is-active" to="/dashboard">
                           <DashboardIcon className="icon_dash page_icon"></DashboardIcon>
                           Dashboard
-                        </a>
+                        </NavLink>
                       </h3>
                     </li>
                     <li className="page" id="adminLink">
                       <h3 className="admin">
-                        <a href="#" className="link">
+                        <NavLink href="#" className="navbar-item" activeClassName="is-active" id="link" to="/admin">
                           <AdminPanelSettingsIcon className="admin_dash page_icon"></AdminPanelSettingsIcon>
                           Admin
-                        </a>
+                        </NavLink>
                       </h3>
                     </li>
                     <li className="page" id="driverLink">
                       <h3 className="driver">
-                        <a href="#" className="link">
+                        <NavLink className="navbar-item" activeClassName="is-active" id="link" to="/driver" href="#" >
                           <AirlineSeatReclineExtraIcon className="driver_dash page_icon"></AirlineSeatReclineExtraIcon>
                           Drivers
-                        </a>
+                        </NavLink>
                       </h3>
                     </li>
                     <li className="page" id="customerLink">
                       <h3 className="customer">
-                        <a href="#" className="link">
+                        <NavLink className="navbar-item" activeClassName="is-active" id="link" to="/customers" href="#" >
                           <AccountCircleIcon className="customer_dash page_icon"></AccountCircleIcon>
                           Customers
-                        </a>
+                        </NavLink>
                       </h3>
                     </li>
                     <li className="page" id="carLink">
                       <h3 className="car">
-                        <a href="#" className="link">
+                        <NavLink className="navbar-item" activeClassName="is-active" id="link" to="/cars" href="#">
                           <CarRentalIcon className="car_dash page_icon"></CarRentalIcon>
                           Cars
-                        </a>
+                        </NavLink>
                       </h3>
                     </li>
                     <li className="page" id="bookingLink">
                       <h3 className="booking">
-                        <a href="#" className="link">
+                        <NavLink className="navbar-item" activeClassName="is-active" id="link" to="/booking" href="#" >
                           <LibraryBooksIcon className="booking_dash page_icon"></LibraryBooksIcon>
                           Booking
-                        </a>
+                        </NavLink>
                       </h3>
                     </li>
                     <li className="page" id="paymentLink">
                       <h3 className="payment">
-                        <a href="#" className="link">
+                        <NavLink className="navbar-item" activeClassName="is-active" id="link" to="/admin_payment" href="#">
                           <PaymentsIcon className="payment_dash page_icon"></PaymentsIcon>
                           Payment
-                        </a>
+                        </NavLink>
                       </h3>
                     </li>
                   </ul>

@@ -21,15 +21,21 @@ import Payment from "./admin_pages/Payment";
 function App() {
   return (
    <Routes>
-      {/* <Route exact path="/" element= {<RoutersTwo/>} />
+      <Route exact path="/" element= {<RoutersTwo/>} />
       <Route path="/home" element={<Home/>} />
       <Route path="/about" element={<AboutUs/>} />
       <Route path="/hot_offers" element={<HotOffers/>} />
       <Route path="/contact" element={<Contact/>} />
       <Route path="/loging" element={<LogingForm/>} />
       <Route path="/dashboard" element={<DashBoard/>} />
-      <Route path="/payment" element={<PaymentDetails/>} /> */}
-       <Route path="/" element={<Payment/>} />
+      <Route path="/payment" element={<PaymentDetails/>} />
+      <Route path="/admin" element={<Admin/>} />
+      <Route path="/driver" element={<Driver/>} />
+      <Route path="/customers" element={<Customer/>} />
+      <Route path="/cars" element={<Cars/>} />
+      <Route path="/booking" element={<Booking/>} />
+       <Route path="/dashboard" element={<DashBoard/>} />
+       <Route path="admin_payment" element={<Payment/>}/>
    </Routes>
   )
 }
