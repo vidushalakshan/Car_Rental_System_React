@@ -15,6 +15,7 @@ import Driver from "./admin_pages/Driver";
 import Customer from "./admin_pages/Customer";
 import Cars from "./admin_pages/Cars";
 import Booking from "./admin_pages/Booking";
+import Payment from "./admin_pages/Payment";
 
 
 function App() {
@@ -28,7 +29,7 @@ function App() {
       <Route path="/loging" element={<LogingForm/>} />
       <Route path="/dashboard" element={<DashBoard/>} />
       <Route path="/payment" element={<PaymentDetails/>} /> */}
-       <Route path="/" element={<Booking/>} />
+       <Route path="/" element={<Payment/>} />
    </Routes>
   )
 }
