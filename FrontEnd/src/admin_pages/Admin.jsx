@@ -17,6 +17,7 @@ import TopNavBar from "./TopNavBar";
 import { styled, alpha } from "@mui/material/styles";
 import { ValidatorForm, TextValidator } from "react-material-ui-form-validator";
 import { useState } from "react";
+import { Axios } from "axios";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -64,6 +65,21 @@ const Admin = () => {
     email: ""
   })
 
+  function submit (e) {
+    e.preventDefault();
+    Axios.post(url, {
+      id: data.id,
+      name: data.name,
+      address: data.address,
+      number: data.number,
+      password: data.password,
+      email: data.email
+    })
+    .then (res => {
+      console.log(res.data)
+    })
+  }
+
   function handle (e) {
     const newdata= {...data}
     newdata[e.target.id]=e.target.value
@@ -87,18 +103,18 @@ const Admin = () => {
             <TopNavBar />
 
             {/* Start textField content */}
-            <form>
+            <form onSubmit={(e) => submit(e)}>
               <div className="txtAdmin">
                 <TextField
-                  id="standard-textarea"
+                  id="id"
                   label="Admin_ID"
                   multiline
                   variant="standard"
                   onChange={(e) => handle(e)}
-                  value={data.id}
+                 
                 />
                 <TextField
-                  id="standard-textarea"
+                  id="name"
                   label="Full_Name"
                   multiline
                   variant="standard"
@@ -106,7 +122,7 @@ const Admin = () => {
                   value={data.name}
                 />
                 <TextField
-                  id="standard-textarea"
+                  id="address"
                   label="Address"
                   multiline
                   variant="standard"
@@ -114,7 +130,7 @@ const Admin = () => {
                   value={data.address}
                 />
                 <TextField
-                  id="standard-textarea"
+                  id="number"
                   label="Mobile_Number"
                   multiline
                   variant="standard"
@@ -122,7 +138,7 @@ const Admin = () => {
                   value={data.number}
                 />
                 <TextField
-                  id="standard-textarea"
+                  id="password"
                   label="Password"
                   multiline
                   variant="standard"
@@ -130,7 +146,7 @@ const Admin = () => {
                   value={data.password}
                 />
                 <TextField
-                  id="standard-textarea"
+                  id="email"
                   label="Email"
                   multiline
                   variant="standard"
