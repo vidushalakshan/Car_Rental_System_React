@@ -32,7 +32,6 @@ const Home = () => {
                   Reserve Now
                 </Button>
               </Stack>
-
            </Container>
           </div>
       </Slider>  

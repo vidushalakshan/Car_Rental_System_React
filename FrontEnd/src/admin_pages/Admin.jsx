@@ -15,6 +15,8 @@ import Paper from "@mui/material/Paper";
 import SlideNavBar from "./SlideNavBar";
 import TopNavBar from "./TopNavBar";
 import { styled, alpha } from "@mui/material/styles";
+import { ValidatorForm, TextValidator } from "react-material-ui-form-validator";
+import { useState } from "react";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -51,6 +53,24 @@ const rows = [
 ];
 
 const Admin = () => {
+
+  const url = ""
+  const [data, setData]=useState({
+    id: "",
+    name: "",
+    address: "",
+    number: "",
+    password: "",
+    email: ""
+  })
+
+  function handle (e) {
+    const newdata= {...data}
+    newdata[e.target.id]=e.target.value
+    setData(newdata)
+    console.log(newdata)
+  }
+
   return (
     <Box
       component="form"
@@ -67,66 +87,79 @@ const Admin = () => {
             <TopNavBar />
 
             {/* Start textField content */}
+            <form>
+              <div className="txtAdmin">
+                <TextField
+                  id="standard-textarea"
+                  label="Admin_ID"
+                  multiline
+                  variant="standard"
+                  onChange={(e) => handle(e)}
+                  value={data.id}
+                />
+                <TextField
+                  id="standard-textarea"
+                  label="Full_Name"
+                  multiline
+                  variant="standard"
+                  onChange={(e) => handle(e)}
+                  value={data.name}
+                />
+                <TextField
+                  id="standard-textarea"
+                  label="Address"
+                  multiline
+                  variant="standard"
+                  onChange={(e) => handle(e)}
+                  value={data.address}
+                />
+                <TextField
+                  id="standard-textarea"
+                  label="Mobile_Number"
+                  multiline
+                  variant="standard"
+                  onChange={(e) => handle(e)}
+                  value={data.number}
+                />
+                <TextField
+                  id="standard-textarea"
+                  label="Password"
+                  multiline
+                  variant="standard"
+                  onChange={(e) => handle(e)}
+                  value={data.password}
+                />
+                <TextField
+                  id="standard-textarea"
+                  label="Email"
+                  multiline
+                  variant="standard"
+                  onChange={(e) => handle(e)}
+                  value={data.email}
+                />
+              </div>
 
-            <div className="txtAdmin">
-              <TextField
-                id="standard-textarea"
-                label="Admin_ID"
-                multiline
-                variant="standard"
-              />
-              <TextField
-                id="standard-textarea"
-                label="Full_Name"
-                multiline
-                variant="standard"
-              />
-              <TextField
-                id="standard-textarea"
-                label="Address"
-                multiline
-                variant="standard"
-              />
-              <TextField
-                id="standard-textarea"
-                label="Mobile_Number"
-                multiline
-                variant="standard"
-              />
-              <TextField
-                id="standard-textarea"
-                label="Password"
-                multiline
-                variant="standard"
-              />
-              <TextField
-                id="standard-textarea"
-                label="Email"
-                multiline
-                variant="standard"
-              />
-            </div>
+              {/* End textField content */}
 
-            {/* End textField content */}
+              {/* Start button content */}
 
-            {/* Start button content */}
-
-            <div className="btnAdmin">
-              <Stack direction="row" spacing={2}>
-                <Button variant="contained" color="primary">
-                  Save
-                </Button>
-                <Button variant="contained" color="success">
-                  Update
-                </Button>
-                <Button variant="contained" color="error">
-                  Delete
-                </Button>
-                <Button variant="contained" color="secondary">
-                  Clear
-                </Button>
-              </Stack>
-            </div>
+              <div className="btnAdmin">
+                <Stack direction="row" spacing={2}>
+                  <Button variant="contained" color="primary" type="submit">
+                    Save
+                  </Button>
+                  <Button variant="contained" color="success">
+                    Update
+                  </Button>
+                  <Button variant="contained" color="error">
+                    Delete
+                  </Button>
+                  <Button variant="contained" color="secondary">
+                    Clear
+                  </Button>
+                </Stack>
+              </div>
+            </form>
 
             {/* End button content */}
 
