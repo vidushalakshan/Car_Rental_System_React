@@ -17,7 +17,7 @@ import TopNavBar from "./TopNavBar";
 import { styled, alpha } from "@mui/material/styles";
 import { ValidatorForm, TextValidator } from "react-material-ui-form-validator";
 import { useState } from "react";
-import { Axios } from "axios";
+import axios, * as other from 'axios'
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -67,7 +67,8 @@ const Admin = () => {
 
   function submit (e) {
     e.preventDefault();
-    Axios.post(url, {
+    console.log("working button");
+    axios.post(url, {
       id: data.id,
       name: data.name,
       address: data.address,
@@ -89,7 +90,6 @@ const Admin = () => {
 
   return (
     <Box
-      component="form"
       sx={{
         "& .MuiTextField-root": { m: 3, width: "35ch" },
       }}
@@ -103,7 +103,7 @@ const Admin = () => {
             <TopNavBar />
 
             {/* Start textField content */}
-            <form onSubmit={(e) => submit(e)}>
+            <form  onSubmit={(e) => submit(e)}>
               <div className="txtAdmin">
                 <TextField
                   id="id"
