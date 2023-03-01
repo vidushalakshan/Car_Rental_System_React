@@ -5,6 +5,7 @@ import lk.ijse.spring.entity.Admin;
 import lk.ijse.spring.repo.AdminRepo;
 import lk.ijse.spring.service.AdminService;
 import org.modelmapper.ModelMapper;
+import org.modelmapper.TypeToken;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
@@ -46,7 +47,12 @@ public class AdminServiceImpl implements AdminService {
 
     @Override
     public AdminDTO searchAdmin(String id) {
-        return null;
+        if (adminRepo.existsById(id)){
+            return modelMapper.map(adminRepo.findById(id), new TypeToken<List<AdminDTO>>() {
+            }.getType());
+        }else {
+            throw new RuntimeException("No Admin For " + id + "..!");
+        }
     }
 
     @Override
