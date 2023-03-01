@@ -57,7 +57,8 @@ public class AdminServiceImpl implements AdminService {
 
     @Override
     public List<AdminDTO> getAllAdmin() {
-        return null;
+        return modelMapper.map(adminRepo.findAll(), new TypeToken<List<AdminDTO>>(){
+        }.getType());
     }
 
     @Override
