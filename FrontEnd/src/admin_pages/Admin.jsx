@@ -16,7 +16,7 @@ import SlideNavBar from "./SlideNavBar";
 import TopNavBar from "./TopNavBar";
 import { styled, alpha } from "@mui/material/styles";
 import { ValidatorForm, TextValidator } from "react-material-ui-form-validator";
-import { useState } from "react";
+import {useEffect, useState} from "react";
 import axios, * as other from 'axios'
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -55,7 +55,21 @@ const rows = [
 
 const Admin = () => {
 
-  const url = ""
+
+  const {admin, setAdmin}=useState([]);
+
+  useEffect(() =>{
+    loadAmdin();
+  },[]);
+
+  const loadAdmin = async () => {
+    const result =await axios.get("http://localhost:8080/BackEnd_war/admin");
+    console.log(result);
+  };
+
+
+
+  /*const url = ""
   const [data, setData]=useState({
     id: "",
     name: "",
@@ -86,7 +100,7 @@ const Admin = () => {
     newdata[e.target.id]=e.target.value
     setData(newdata)
     console.log(newdata)
-  }
+  }*/
 
   return (
     <Box
@@ -194,6 +208,10 @@ const Admin = () => {
                     </TableRow>
                   </TableHead>
                   <TableBody>
+
+                    {
+
+                    }
                     {rows.map((row) => (
                       <TableRow
                         key={row.name}
