@@ -27,6 +27,7 @@ public class JPAConfig {
     @Autowired
     Environment env;
 
+    @Bean
     public LocalContainerEntityManagerFactoryBean entityManagerFactory(DataSource dataSource,JpaVendorAdapter jva){
         LocalContainerEntityManagerFactoryBean bean = new LocalContainerEntityManagerFactoryBean();
         bean.setJpaVendorAdapter(jva);
@@ -56,6 +57,7 @@ public class JPAConfig {
         return vendor;
     }
 
+    @Bean
     public PlatformTransactionManager transactionManager(EntityManagerFactory emf) {
         return new JpaTransactionManager(emf);
     }

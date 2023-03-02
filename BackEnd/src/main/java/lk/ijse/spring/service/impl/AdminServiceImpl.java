@@ -1,5 +1,6 @@
 package lk.ijse.spring.service.impl;
 
+
 import lk.ijse.spring.dto.AdminDTO;
 import lk.ijse.spring.entity.Admin;
 import lk.ijse.spring.repo.AdminRepo;
@@ -7,23 +8,27 @@ import lk.ijse.spring.service.AdminService;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.TypeToken;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
 import java.util.List;
 
+@Transactional
+@Service
 public class AdminServiceImpl implements AdminService {
 
     @Autowired
-    private AdminRepo adminRepo;
+    private ModelMapper modelMapper;
 
     @Autowired
-    private ModelMapper modelMapper;
+    private AdminRepo adminRepo;
 
     @Override
     public void saveAdmin(AdminDTO adminDTO) {
         if (!adminRepo.existsById(adminDTO.getAdmin_Id())){
             adminRepo.save(modelMapper.map(adminDTO, Admin.class));
         }else {
-            throw new RuntimeException("Admin Already Exist..");
+            throw new RuntimeException("Admin Already Exist");
         }
     }
 
@@ -47,10 +52,10 @@ public class AdminServiceImpl implements AdminService {
 
     @Override
     public AdminDTO searchAdmin(String id) {
-        if (adminRepo.existsById(id)){
+        if (adminRepo.existsById(id)) {
             return modelMapper.map(adminRepo.findById(id), new TypeToken<List<AdminDTO>>() {
             }.getType());
-        }else {
+        } else {
             throw new RuntimeException("No Admin For " + id + "..!");
         }
     }
@@ -58,6 +63,7 @@ public class AdminServiceImpl implements AdminService {
     @Override
     public List<AdminDTO> getAllAdmin() {
         return modelMapper.map(adminRepo.findAll(), new TypeToken<List<AdminDTO>>(){
+
         }.getType());
     }
 

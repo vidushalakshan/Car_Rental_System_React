@@ -5,6 +5,7 @@ import lk.ijse.spring.dto.AdminDTO;
 import java.util.List;
 
 public interface AdminService {
+
     void saveAdmin(AdminDTO adminDTO);
 
     void deleteAdmin(String adminId);
