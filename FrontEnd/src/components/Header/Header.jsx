@@ -8,32 +8,7 @@ import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 import { Link, useNavigate } from "react-router-dom";
 
-const navLinks = [
-  {
-    path: "/home",
-    display: "Home",
-  },
 
-  {
-    path: "/aboutus",
-    display: "About",
-  },
-
-  {
-    path: "/contact",
-    display: "Contacts",
-  },
-
-  {
-    path: "/cars",
-    display: "Cars",
-  },
-
-  {
-    path: "/dashboard",
-    display: "dashboard",
-  },
-];
 
 function Header() {
   const history = useNavigate();

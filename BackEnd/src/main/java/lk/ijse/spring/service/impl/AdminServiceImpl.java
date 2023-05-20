@@ -18,10 +18,10 @@ import java.util.List;
 public class AdminServiceImpl implements AdminService {
 
     @Autowired
-    private ModelMapper modelMapper;
+    private AdminRepo adminRepo;
 
     @Autowired
-    private AdminRepo adminRepo;
+    private ModelMapper modelMapper;
 
     @Override
     public void saveAdmin(AdminDTO adminDTO) {

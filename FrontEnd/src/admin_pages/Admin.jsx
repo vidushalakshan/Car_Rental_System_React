@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { Component, Fragment } from "react";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
@@ -15,9 +15,9 @@ import Paper from "@mui/material/Paper";
 import SlideNavBar from "./SlideNavBar";
 import TopNavBar from "./TopNavBar";
 import { styled, alpha } from "@mui/material/styles";
-import { ValidatorForm, TextValidator } from "react-material-ui-form-validator";
-import {useEffect, useState} from "react";
-import axios, * as other from 'axios'
+import { useEffect, useState } from "react";
+import axios, * as other from "axios";
+import AdminService from "../services/AdminService";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -27,216 +27,182 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
 }));
 
-function createData(
-  Admin_Id,
-  Full_Name,
-  Address,
-  Mobile_Number,
-  Password,
-  Email
-) {
-  return {
-    Admin_Id,
-    Full_Name,
-    Address,
-    Mobile_Number,
-    Password,
-    Email,
-  };
-}
+class Admin extends Component {
 
-const rows = [
-  createData("Frozen yoghurt", 159, 6.0, 24, 4.0),
-  createData("Ice cream sandwich", 237, 9.0, 37, 4.3),
-  createData("Eclair", 262, 16.0, 24, 6.0),
-  createData("Cupcake", 305, 3.7, 67, 4.3),
-  createData("Gingerbread", 356, 16.0, 49, 3.9),
-];
-
-const Admin = () => {
-
-
-  const {admin, setAdmin}=useState([]);
-
-  useEffect(() =>{
-    loadAmdin();
-  },[]);
-
-  const loadAdmin = async () => {
-    const result =await axios.get("http://localhost:8080/BackEnd_war/admin");
-    console.log(result);
-  };
-
-
-
-  /*const url = ""
-  const [data, setData]=useState({
-    id: "",
-    name: "",
-    address: "",
-    number: "",
-    password: "",
-    email: ""
-  })
-
-  function submit (e) {
-    e.preventDefault();
-    console.log("working button");
-    axios.post(url, {
-      id: data.id,
-      name: data.name,
-      address: data.address,
-      number: data.number,
-      password: data.password,
-      email: data.email
-    })
-    .then (res => {
-      console.log(res.data)
-    })
+  constructor(props) {
+    super(props);
+    this.state= {
+      formData: {
+        id: '',
+        name: '',
+        address: '',
+        mnumber: '',
+        password: '',
+        email:''
+      }
+    }
   }
 
-  function handle (e) {
-    const newdata= {...data}
-    newdata[e.target.id]=e.target.value
-    setData(newdata)
-    console.log(newdata)
-  }*/
+   submitAdmin = async (e) => {
+    e.preventDefault();
+    let formData = this.state.formData;
+    let res = await AdminService.postAdmin(formData);
 
-  return (
-    <Box
-      sx={{
-        "& .MuiTextField-root": { m: 3, width: "35ch" },
-      }}
-      noValidate
-      autoComplete="off"
-    >
-      <Grid container spacing={3}>
-        <SlideNavBar />
-        <Grid item xs={9}>
-          <Item>
-            <TopNavBar />
+    console.log(res);
+  }
 
-            {/* Start textField content */}
-            <form  onSubmit={(e) => submit(e)}>
-              <div className="txtAdmin">
-                <TextField
-                  id="id"
-                  label="Admin_ID"
-                  multiline
-                  variant="standard"
-                  onChange={(e) => handle(e)}
-                 
-                />
-                <TextField
-                  id="name"
-                  label="Full_Name"
-                  multiline
-                  variant="standard"
-                  onChange={(e) => handle(e)}
-                  value={data.name}
-                />
-                <TextField
-                  id="address"
-                  label="Address"
-                  multiline
-                  variant="standard"
-                  onChange={(e) => handle(e)}
-                  value={data.address}
-                />
-                <TextField
-                  id="number"
-                  label="Mobile_Number"
-                  multiline
-                  variant="standard"
-                  onChange={(e) => handle(e)}
-                  value={data.number}
-                />
-                <TextField
-                  id="password"
-                  label="Password"
-                  multiline
-                  variant="standard"
-                  onChange={(e) => handle(e)}
-                  value={data.password}
-                />
-                <TextField
-                  id="email"
-                  label="Email"
-                  multiline
-                  variant="standard"
-                  onChange={(e) => handle(e)}
-                  value={data.email}
-                />
-              </div>
+  render() {
+    return (
+      <Box
+        sx={{
+          "& .MuiTextField-root": { m: 3, width: "35ch" },
+        }}
+      >
+        <Grid container spacing={3}>
+          <SlideNavBar />
+          <Grid item xs={9}>
+            <Item>
+              <TopNavBar />
 
-              {/* End textField content */}
+              {/* Start textField content */}
+              <form  onSubmit={this.submitAdmin} >
+                <div className="txtAdmin">
+                  <TextField
+                    id="id"
+                    label="Admin_ID"
+                    multiline
+                    variant="standard"
+                    value={this.state.formData.id}
+                    onChange={(e) => {
+                      let formData = this.state.formData
+                      formData.id=e.target.value
+                      this.setState({formData})
+                    }}
+                  />
+                  <TextField
+                    id="name"
+                    label="Full_Name"
+                    multiline
+                    variant="standard"
+                    value={this.state.formData.name}
+                    onChange={(e) => {
+                      let formData = this.state.formData
+                      formData.name=e.target.value
+                      this.setState({formData})
+                    }}
+                  />
+                  <TextField
+                    id="address"
+                    label="Address"
+                    multiline
+                    variant="standard"
+                    value={this.state.formData.address}
+                    onChange={(e) => {
+                      let formData = this.state.formData
+                      formData.address=e.target.value
+                      this.setState({formData})
+                    }}
+                  />
+                  <TextField
+                    id="number"
+                    label="Mobile_Number"
+                    multiline
+                    variant="standard"
+                    value={this.state.formData.mnumber}
+                    onChange={(e) => {
+                      let formData = this.state.formData
+                      formData.mnumber=e.target.value
+                      this.setState({formData})
+                    }}
+                  />
+                  <TextField
+                    id="password"
+                    label="Password"
+                    multiline
+                    variant="standard"
+                    value={this.state.formData.password}
+                    onChange={(e) => {
+                      let formData = this.state.formData
+                      formData.password=e.target.value
+                      this.setState({formData})
+                    }}
+                  />
+                  <TextField
+                    id="email"
+                    label="Email"
+                    multiline
+                    variant="standard"
+                    value={this.state.formData.email}
+                    onChange={(e) => {
+                      let formData = this.state.formData
+                      formData.email=e.target.value
+                      this.setState({formData})
+                    }}
+                  />
+                </div>
 
-              {/* Start button content */}
+                {/* End textField content */}
 
-              <div className="btnAdmin">
-                <Stack direction="row" spacing={2}>
-                  <Button variant="contained" color="primary" type="submit">
-                    Save
-                  </Button>
-                  <Button variant="contained" color="success">
-                    Update
-                  </Button>
-                  <Button variant="contained" color="error">
-                    Delete
-                  </Button>
-                  <Button variant="contained" color="secondary">
-                    Clear
-                  </Button>
-                </Stack>
-              </div>
-            </form>
+                {/* Start button content */}
 
-            {/* End button content */}
+                <div className="btnAdmin">
+                  <Stack direction="row" spacing={2}>
+                    <Button variant="contained" color="primary" type="submit">
+                      Save
+                    </Button>
+                    <Button variant="contained" color="success">
+                      Update
+                    </Button>
+                    <Button variant="contained" color="secondary">
+                      Clear
+                    </Button>
+                  </Stack>
+                </div>
+              </form>
 
-            {/* Start table content */}
-            <div className="table_admin">
-              <TableContainer component={Paper}>
-                <Table sx={{ minWidth: 1150 }} aria-label="simple table">
-                  <TableHead>
-                    <TableRow>
-                      <TableCell>Admin_ID</TableCell>
-                      <TableCell align="right">Full_Name</TableCell>
-                      <TableCell align="right">Address</TableCell>
-                      <TableCell align="right">Mobile_Number</TableCell>
-                      <TableCell align="right">Password</TableCell>
-                      <TableCell align="right">Email</TableCell>
-                    </TableRow>
-                  </TableHead>
-                  <TableBody>
+              {/* End button content */}
 
-                    {
-
-                    }
-                    {rows.map((row) => (
-                      <TableRow
-                        key={row.name}
-                        sx={{
-                          "&:last-child td, &:last-child th": { border: 0 },
-                        }}
-                      >
-                        <TableCell component="th" scope="row">
-                          {row.name}
-                        </TableCell>
-                        <TableCell align="right">{row.calories}</TableCell>
-                        <TableCell align="right">{row.fat}</TableCell>
-                        <TableCell align="right">{row.carbs}</TableCell>
-                        <TableCell align="right">{row.protein}</TableCell>
+              {/* Start table content */}
+              <div className="table_admin">
+                <TableContainer component={Paper}>
+                  <Table sx={{ minWidth: 1150 }} aria-label="simple table">
+                    <TableHead>
+                      <TableRow>
+                        <TableCell>Admin_ID</TableCell>
+                        <TableCell align="left">Full_Name</TableCell>
+                        <TableCell align="left">Address</TableCell>
+                        <TableCell align="left">Mobile_Number</TableCell>
+                        <TableCell align="left">Password</TableCell>
+                        <TableCell align="left">Email</TableCell>
+                        <TableCell align="left">Action</TableCell>
                       </TableRow>
-                    ))}
-                  </TableBody>
-                </Table>
-              </TableContainer>
-            </div>
-          </Item>
+                    </TableHead>
+                    <TableBody>
+                      <TableRow>
+                        <TableCell component="th" scope="row">
+                          A002
+                        </TableCell>
+                        <TableCell align="left">vidsuha</TableCell>
+                        <TableCell align="left">badulla</TableCell>
+                        <TableCell align="left">934323</TableCell>
+                        <TableCell align="left">123</TableCell>
+                        <TableCell align="left">vsfs@</TableCell>
+                        <TableCell align="left">
+                          <Button variant="contained" color="error">
+                            Delete
+                          </Button>
+                        </TableCell>
+                      </TableRow>
+                    </TableBody>
+                  </Table>
+                </TableContainer>
+              </div>
+            </Item>
+          </Grid>
         </Grid>
-      </Grid>
-    </Box>
-  );
-};
+      </Box>
+    );
+  }
+}
 
 export default Admin;
